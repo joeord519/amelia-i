@@ -1,6 +1,22 @@
+# Never commit secrets
+wp-config.php
+.env
 
-wp-content/upgrade/*
-wp-content/backup-db/*
-wp-content/cache/*
-wp-content/cache/supercache/*
-wp-content/w3tc-cache/*
+# WordPress uploads
+wp-content/uploads/
+
+# Caches
+wp-content/cache/
+wp-content/wflogs/
+wp-content/upgrade/
+wp-content/backups/
+wp-content/backup-db/
+
+# Logs
+*.log
+php_errorlog
+
+# OS files
+.DS_Store
+Thumbs.db
+
