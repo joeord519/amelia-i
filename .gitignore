@@ -23,3 +23,7 @@ Thumbs.db
 wp-content/plugins/calendar.v2/calendar.v5/debug_flight.log
 debug_flight.log
 wp-content/plugins/calendar.v4/debug_flight.log
+
+# Ignore ALL debug logs everywhere
+*debug*
+*.log
