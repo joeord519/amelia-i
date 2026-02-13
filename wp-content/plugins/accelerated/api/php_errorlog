@@ -1,0 +1,35 @@
+[25-Jul-2025 04:40:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php on line 11
+[25-Jul-2025 04:58:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php on line 11
+[25-Jul-2025 15:11:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php on line 11
+[25-Jul-2025 16:47:40 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php on line 6
+[25-Jul-2025 16:47:40 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/add_lead.php on line 14
+[26-Jul-2025 03:46:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php on line 8
+[26-Jul-2025 03:46:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php on line 8
+[26-Jul-2025 03:47:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php on line 8
+[26-Jul-2025 03:48:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_text_field() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php on line 8
+[06-Sep-2025 18:40:58 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php on line 16
+[02-Nov-2025 00:42:57 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/api/create_lead_minimal.php on line 16

@@ -1,0 +1,34 @@
+[09-Jul-2025 05:51:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SAKARI_CLIENT_ID" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/smartslot/send_sms_sakari.php:9
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/smartslot/test_send.php(7): sendSakariSMS('+16363283750', '\xE2\x9C\x88\xEF\xB8\x8F Your fli...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/smartslot/send_sms_sakari.php on line 9
+[09-Jul-2025 06:00:44 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "SAKARI_CLIENT_ID" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/smartslot/test_send.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/smartslot/test_send.php on line 4
+[09-Jul-2025 06:01:52 UTC] ❌ Failed to get access token: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /v1/token</pre>
+</body>
+</html>
+
+[09-Jul-2025 06:03:35 UTC] ❌ Failed to get access token: <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>Cannot POST /v1/token</pre>
+</body>
+</html>
+
+[09-Jul-2025 06:04:47 UTC] ❌ Failed to get access token: 
+[09-Jul-2025 06:06:36 UTC] ❌ CURL error: Could not resolve host: login.sakari.io
+[09-Jul-2025 06:06:36 UTC] ❌ Failed to get access token: 

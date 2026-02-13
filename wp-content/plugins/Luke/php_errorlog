@@ -1,0 +1,29 @@
+[09-Dec-2025 03:36:04 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function admin_url() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-ui.php:98
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-ui.php on line 98
+[09-Dec-2025 03:38:15 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function admin_url() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-ui.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-ui.php on line 99
+[09-Dec-2025 03:38:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function admin_url() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-ui.php:99
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-ui.php on line 99
+[09-Dec-2025 04:45:50 UTC] PHP Fatal error:  Uncaught TypeError: luke_is_ready_to_buy(): Argument #2 ($botReply) must be of type string, null given, called in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-api.php on line 194 and defined in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-api.php:175
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-api.php(194): luke_is_ready_to_buy('tell me about y...', NULL)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-api.php on line 175
+[09-Dec-2025 04:51:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-checkout.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-checkout.php on line 7
+[09-Dec-2025 04:51:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-checkout.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-checkout.php on line 7
+[09-Dec-2025 04:52:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-checkout.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/Luke/luke-checkout.php on line 7

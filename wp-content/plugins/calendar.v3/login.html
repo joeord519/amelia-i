@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CFI Login</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 50px; }
+    input { padding: 10px; width: 250px; font-size: 16px; margin-top: 10px; }
+    button { padding: 10px 20px; font-size: 16px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h2>CFI/Admin Login</h2>
+  <p>Enter your phone number:</p>
+  <input type="tel" id="phone" placeholder="(###) ###-####" />
+  <br />
+  <button onclick="login()">Login</button>
+  <p id="status" style="color: red; margin-top: 20px;"></p>
+
+  <script>
+    function formatPhone(raw) {
+      return raw.replace(/\D/g, '').replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
+    }
+
+    async function login() {
+      const phoneInput = document.getElementById("phone");
+      const status = document.getElementById("status");
+      const raw = phoneInput.value.replace(/\D/g, '');
+      const phone = formatPhone(raw);
+
+      const res = await fetch("/wp-content/plugins/calendar.v3/login.php?phone=" + encodeURIComponent(phone));
+      const data = await res.json();
+
+      if (data.success) {
+        document.cookie = "user_phone=" + encodeURIComponent(data.phone);
+        document.cookie = "user_name=" + encodeURIComponent(data.name);
+        window.location.href = "index.html"; // or calendar view
+      } else {
+        status.textContent = "Login failed. Please check your phone number.";
+      }
+    }
+  </script>
+</body>
+</html>

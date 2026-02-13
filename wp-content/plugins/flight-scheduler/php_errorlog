@@ -1,0 +1,160 @@
+[01-Mar-2025 04:23:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbqn6ggmq2vlto.wp_locations' doesn't exist in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_locations.php:6
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_locations.php(6): PDOStatement->execute()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_locations.php on line 6
+[01-Mar-2025 04:30:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php:8
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php(8): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php on line 8
+[01-Mar-2025 04:33:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php:8
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php(8): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php on line 8
+[01-Mar-2025 04:37:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php:8
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php(8): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php on line 8
+[01-Mar-2025 04:42:06 UTC] Received Location ID: 1
+[01-Mar-2025 04:44:27 UTC] Received Location ID: 1H0
+[01-Mar-2025 04:44:53 UTC] Received Location ID: 1
+[01-Mar-2025 04:46:16 UTC] Received Location ID: 1H0
+[01-Mar-2025 04:47:37 UTC] Received Location ID: 1
+[01-Mar-2025 04:51:49 UTC] Received Location ID: "1H0"
+[01-Mar-2025 04:51:49 UTC] Received Location ID: 1H0
+[01-Mar-2025 04:51:49 UTC] Aircraft Response: Array
+(
+    [0] => Array
+        (
+            [id] => FMX
+            [name] => FMX AATD
+        )
+
+    [1] => Array
+        (
+            [id] => N1847J
+            [name] => PA28-140/160
+        )
+
+    [2] => Array
+        (
+            [id] => N2723B
+            [name] => PA28-140
+        )
+
+    [3] => Array
+        (
+            [id] => N374EA
+            [name] => SD4
+        )
+
+    [4] => Array
+        (
+            [id] => N447EA
+            [name] => SD4
+        )
+
+    [5] => Array
+        (
+            [id] => N5714F
+            [name] => PA28-140/160
+        )
+
+    [6] => Array
+        (
+            [id] => N7294A
+            [name] => C172
+        )
+
+    [7] => Array
+        (
+            [id] => N7970F
+            [name] => C150
+        )
+
+)
+
+[01-Mar-2025 04:52:22 UTC] Received Location ID: "1"
+[01-Mar-2025 04:52:22 UTC] Received Location ID: 1
+[01-Mar-2025 04:57:59 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:07:57 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:10:21 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:10:40 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:18:34 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:18:47 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:18:50 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:18:54 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:24:00 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:24:05 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:24:18 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:24:22 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:27:26 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:27:30 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:28:05 UTC] Received Location ID: KALN
+[01-Mar-2025 05:28:11 UTC] Received Home Airport: KALN
+[01-Mar-2025 05:28:17 UTC] Received Home Airport: KALN
+[01-Mar-2025 05:28:29 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:28:33 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:28:41 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:28:51 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:38:37 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:38:41 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:44:53 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:45:03 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:45:41 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:45:46 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:49:18 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:49:21 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:51:59 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:52:03 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:55:05 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:55:12 UTC] Received Home Airport: 1H0
+[01-Mar-2025 05:58:04 UTC] Received Location ID: 1H0
+[01-Mar-2025 05:58:08 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:03:33 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:03:39 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:09:22 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:09:27 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:12:27 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:12:30 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:12:38 UTC] fetch_timeslots.php called with: {"aircraft":"N2723B","cfi":"00004","flightType":"dual_training","date":"2025-04-04"}
+[01-Mar-2025 06:14:51 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:14:55 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:22:14 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:28:18 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:28:25 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:39:31 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:39:40 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:42:58 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:43:04 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:45:31 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:45:36 UTC] Received Home Airport: 1H0
+[01-Mar-2025 06:45:44 UTC] fetch_timeslots.php called with: {"aircraft":"N2723B","cfi":"00003","flightType":"dual_cross_country","date":"2025-04-04"}
+[01-Mar-2025 06:47:06 UTC] fetch_timeslots.php called with: {"aircraft":"N2723B","cfi":"","flightType":"solo_training","date":"2025-04-04"}
+[01-Mar-2025 06:47:16 UTC] fetch_timeslots.php called with: {"aircraft":"N2723B","cfi":"","flightType":"solo_training","date":"2025-04-08"}
+[01-Mar-2025 06:49:15 UTC] Received Location ID: 1H0
+[01-Mar-2025 06:49:20 UTC] Received Home Airport: 1H0
+[01-Mar-2025 20:32:45 UTC] Received Location ID: 1H0
+[01-Mar-2025 20:32:51 UTC] Received Home Airport: 1H0
+[01-Mar-2025 20:33:21 UTC] fetch_timeslots.php called with: {"aircraft":"N1847J","cfi":"","flightType":"solo_training","date":"2025-04-04"}
+[01-Mar-2025 20:33:26 UTC] fetch_timeslots.php called with: {"aircraft":"N1847J","cfi":"","flightType":"solo_training","date":"2025-05-09"}
+[01-Mar-2025 21:48:40 UTC] fetch_timeslots.php called with: []
+[01-Mar-2025 21:48:40 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_timeslots.php on line 8
+[01-Mar-2025 21:48:59 UTC] Received Home Airport: 1H0
+[01-Mar-2025 21:49:06 UTC] fetch_timeslots.php called with: {"aircraft":"N1847J","cfi":"00002","flightType":"dual_training","date":"2025-05-09"}
+[01-Mar-2025 21:52:24 UTC] Received Location ID: 1H0
+[01-Mar-2025 21:52:29 UTC] Received Home Airport: 1H0
+[01-Mar-2025 21:52:40 UTC] fetch_timeslots.php called with: {"aircraft":"N2723B","cfi":"00004","flightType":"dual_cross_country","date":"2025-03-26"}
+[01-Mar-2025 21:52:56 UTC] fetch_timeslots.php called with: {"aircraft":"N374EA","cfi":"00004","flightType":"dual_cross_country","date":"2025-03-26"}
+[01-Mar-2025 21:53:01 UTC] fetch_timeslots.php called with: {"aircraft":"N374EA","cfi":"","flightType":"solo_training","date":"2025-03-26"}
+[01-Mar-2025 21:53:08 UTC] fetch_timeslots.php called with: {"aircraft":"N374EA","cfi":"","flightType":"solo_training","date":"2025-04-03"}
+[01-Mar-2025 22:13:18 UTC] Received Location ID: 1H0
+[01-Mar-2025 22:15:10 UTC] Received Location ID: 1H0
+[01-Mar-2025 22:18:32 UTC] PHP Parse error:  Unclosed '{' on line 26 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php on line 42
+[01-Mar-2025 22:19:16 UTC] PHP Parse error:  Unclosed '{' on line 26 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php on line 42
+[01-Mar-2025 22:24:54 UTC] PHP Parse error:  Unclosed '{' on line 31 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php on line 47
+[01-Mar-2025 22:28:26 UTC] PHP Parse error:  Unclosed '{' on line 21 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php on line 48
+[01-Mar-2025 22:28:32 UTC] PHP Parse error:  Unclosed '{' on line 21 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-scheduler/fetch_aircraft.php on line 48

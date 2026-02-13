@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Scheduler Verification</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <!-- Flatpickr Calendar Support -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+  <style>
+    body {
+      font-family: "Bangers", cursive;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <script>
+
+    const confirmationPrompts = [
+  "Preflight check complete. You’re cleared for awesome!",
+  "Make sure your headset's charged. This flight’s gonna rock. 🎧",
+  "Flight suit not required... but highly encouraged. 🕶️",
+  "Rest your wings. You’re about to soar. 🛫",
+  "You just booked with the coolest school in the Midwest. 💥",
+  "Epic flight confirmed. Time to feel like Maverick. 🕺",
+  "Bring snacks. But not too many — weight & balance. ⚖️",
+  "Bookmark the sky. You’re heading there soon.",
+  "Student → Pilot in progress. 🧠 ✈️ 💪",
+  "Don’t forget your shades. You’ll be flying above the clouds. 😎",
+  "Preflight check complete. You’re cleared for awesome! ✈️",
+  "Make sure your headset’s charged. This flight’s gonna rock. 🎧",
+  "Flight suit not required... but highly encouraged. 🕶️",
+  "Rest your wings. You’re about to soar. 🛫",
+  "You just booked with the coolest school in the Midwest. 💥",
+  "Epic flight confirmed. Time to feel like Maverick. 🕺",
+  "Bring snacks. But not too many – weight & balance. ⚖️",
+  "Bookmark the sky. You’re heading there soon. 📘✈️",
+  "Student ➜ Pilot in progress. 🧑‍✈️🛫💪",
+  "Don’t forget your shades. You’ll be flying above the clouds. 😎",
+  "Autopilot status: CONFIDENCE. 🧠",
+  "Checklist says: Booked ✔️ Fuel ⛽ Bravery 💯",
+  "Flight approved. Tower says ‘You got this.’ 🎤",
+  "Another step closer to your wings. 🪽",
+  "Sky’s the limit? Not anymore. 🚀",
+  "Thrust set. Altitude ready. Let’s go. 🔥",
+  "You just leveled up in life. 📶✈️",
+  "Runway waiting. Adventure activated. 🛬",
+  "Callsign: Badass. Mission: Learn to fly. 🎯",
+  "Flight mode: Engaged. 📲🛫",
+  "Nothing but blue skies from here. 🌤️",
+  "Roger that. Appointment booked. 📡",
+  "Buckle up. You’re on the fast track. 🎢",
+  "Permission to rock the skies? Granted. 🎸🛫",
+  "Simulators can't contain your energy. 🎮➡️✈️",
+  "Your propeller might spin faster than your brain. 🌀",
+  "Let’s make some crosswinds jealous. 🌬️",
+  "Wings ready. Attitude: full send. 🤘",
+  "Clear left, clear right… clear for awesomeness. 🫡",
+  "Scheduled. And we didn’t even need ATIS. 📻",
+  "Final approach to epic achieved. 🎯🛬",
+  "Ground school in the rear view. Let’s fly! 🎓✈️",
+  "V1, Rotate... Fly! 📈",
+  "Sky traffic has been warned. ⚠️",
+  "Wheels up, worries down. ✌️",
+  "There’s jet fuel in your coffee today. ☕🔥",
+  "If flying was easy, everyone would do it. Oh wait, YOU are. 😏",
+  "You’ve entered the chat: 'Pilot in training'. 💬🛩️",
+  "No autopilot needed for this move. You did it. 🛠️",
+  "Booked a flight, and now you're strutting like a CFI. 💃🧑‍🏫",
+  "That’s one small click for man, one giant leap toward your checkride. 🌕",
+  "Hey student pilot, your wings are showing. 🪽",
+  "You're going places... literally. 🌍🛫",
+  "Next up: Aviator sunglasses and confident walk. 😎👟",
+  "Confirmed flight. Fuel up your confidence. ⛽❤️",
+  "Spin checks done. Confidence level: Unlimited. 🔄",
+  "Your compass just spun 360 from excitement. 🧭",
+  "High pressure system of excitement moving in. ⛅",
+  "Caution: Flight schedule may cause spontaneous dancing. 💃🕺",
+  "Wind shear won’t stop you now. 🌀🛫",
+  "Your call sign should be: Captain Swagger. 🧢",
+  "That flight time won’t log itself! 📝🛫",
+  "Book. Fly. Repeat. 🔁✈️",
+  "Your runway to greatness has just been cleared. 🛣️🛫",
+  "Fuel tanks full. Ready for anything. ⛽✅",
+  "You just booked a flight. All engines GO. 🔥",
+  "Sky’s jealous you’re flying in it. 🌌",
+  "You smell that? Smells like flight time. 👃🛫",
+  "Taxiing toward legendary status. 🚕🧑‍✈️",
+  "Booking complete. Altitude pending. 📍⏫",
+  "Not all heroes wear capes… some wear headsets. 🎧🦸",
+  "From ground-bound to sky-bound. You’re doing it. 🛫",
+  "You make gravity nervous. 🧲😱",
+  "Today’s forecast: 100% chance of awesomeness. 🌦️➡️☀️",
+  "It's official: Your schedule is now cooler than everyone else’s. 🗓️❄️",
+  "If you had wings before, now they're titanium. 🪽🛠️",
+  "Autopilot is jealous of your flight instincts. 🤖🧠",
+  "Nice job, Captain Cool. 😎🧑‍✈️",
+  "Tower says: Cleared to dominate the skies. 🗼👊",
+  "You just got airborne in life. 💨",
+  "Some book meetings, you book adventures. 💼➡️✈️",
+  "Hot prop spinning, cold air blasting. Let’s go. ❄️🔁",
+  "This ain’t turbulence, it’s adrenaline. 💥",
+  "Flight log updated: Legend in progress. 📖🛫",
+  "You should charge rent for how much you're living in the clouds. ☁️💸",
+  "Hangar envy begins... now. 🛩️😮",
+  "Your checklist: Awesome. Confidence. Flight time. ✅",
+  "You just gave gravity a complex. 🔺",
+  "You're not in Kansas anymore. You’re in 3,000 AGL. 🌪️🛫",
+  "There’s no ceiling to your progress... except maybe Class A airspace. ☁️🧠",
+  "One click for you, one huge move for pilotkind. 👨‍🚀✈️",
+  "Next stop: Crosswind landings and radio swagger. 🎙️",
+  "The wings are jealous of your ambition. 🪽🔥",
+  "Wheels up. Attitude up. Let’s go. ⬆️🛫",
+  "Just remember: Piston pilots do it better. 😉",
+  "Ground school called. They’re proud of you. 📚❤️",
+  "Your new ringtone? 'Clear prop!' 🔊",
+  "Who needs sidewalks? You're walking on air now. 🏙️",
+  "This is the kind of confirmation message you show your friends. 🧾🧑‍✈️",
+  "All rise for the honorable Lord of Lift. 🏛️🪂",
+  "You’ve earned your stripes. Even if they’re metaphorical. 🎖️"
+];
+
+function getRandomFlightPrompt() {
+  const index = Math.floor(Math.random() * confirmationPrompts.length);
+  return confirmationPrompts[index];
+}
+
+    $(document).ready(function () {
+      requestPhoneNumber();
+    });
+
+    function requestPhoneNumber() {
+      Swal.fire({
+        title: "PHONE VERIFICATION",
+        html: '<input id="phoneInput" type="tel" maxlength="14" placeholder="(XXX) XXX-XXXX" class="swal2-input">',
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        confirmButtonText: "Check Hours",
+        didOpen: () => {
+          const input = document.getElementById("phoneInput");
+          input.addEventListener("input", function () {
+            let x = this.value.replace(/\D/g, '');
+            this.value = x.length > 6 ? `(${x.slice(0,3)}) ${x.slice(3,6)}-${x.slice(6,10)}` :
+                          x.length > 3 ? `(${x.slice(0,3)}) ${x.slice(3,6)}` : `(${x.slice(0,3)}`;
+          });
+        },
+        preConfirm: () => {
+          const phone = document.getElementById("phoneInput").value.trim();
+          if (!/^\(\d{3}\) \d{3}-\d{4}$/.test(phone)) {
+            return Swal.showValidationMessage("Enter a valid phone number (XXX) XXX-XXXX");
+          }
+          return phone;
+        }
+      }).then(result => {
+        if (result.isConfirmed) {
+          checkStudent(result.value);
+        }
+      });
+    }
+    
+    
+function checkStudent(phoneNumber) {
+  $.getJSON('fetch_student_balance.php?phone=' + encodeURIComponent(phoneNumber), function (data) {
+    console.log('✅ Student Data:', data);
+
+    const name = data.name || "Student";
+    const email = data.email || "";
+    const phase = data.phase || "No";
+    const phone = data.phone || phoneNumber;
+    const price = parseFloat(data.installment_price || 0).toFixed(2);
+    const aircraftHours = parseFloat(data.cab || 0);
+    const instructorHours = parseFloat(data.cib || 0);
+
+    const canSchedule = aircraftHours >= 1.5 && instructorHours >= 1.5;
+
+    const message = `
+      <b>Hello, ${name}!</b><br><br>
+      <b>Aircraft Hours Remaining:</b> ${aircraftHours}<br>
+      <b>Instructor Hours Remaining:</b> ${instructorHours}
+    `;
+
+    const paymentUrl = `https://skylistpro.com/need-more-hours/?nm=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&ph=${encodeURIComponent(phone)}&phase=${encodeURIComponent(phase)}&ileft=${data.ileft || 0}&cab=${aircraftHours}&cib=${instructorHours}&iah=${data.iah || 0}&iih=${data.iih || 0}&installment_price=${price}`;
+
+    Swal.fire({
+      title: "Your Flight Hours",
+      html: message,
+      icon: canSchedule ? "success" : "info",
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: canSchedule ? "Schedule Flight" : "Buy More Hours",
+      denyButtonText: "View My Bookings",
+      cancelButtonText: "Buy More Hours",
+      confirmButtonColor: canSchedule ? "#28a745" : "#6c757d",
+      cancelButtonColor: "#6c757d"
+    }).then(result => {
+      if (result.isConfirmed) {
+        if (canSchedule) {
+          launchFlightScheduler(phoneNumber);
+        } else {
+          window.location.href = paymentUrl;
+        }
+      } else if (result.isDenied) {
+        showMyBookings(phoneNumber);
+      } else if (result.dismiss === Swal.DismissReason.cancel) {
+        window.location.href = paymentUrl;
+      }
+    });
+  }).fail((xhr) => {
+    console.error("❌ AJAX Error:", xhr.responseText);
+    Swal.fire("Error", xhr.responseText || "Could not fetch data from the database.", "error");
+  });
+}
+
+function showMyBookings(phone) {
+  Swal.fire({
+    title: "📋 My Upcoming Flights",
+    html: `
+      <iframe src="my-flights-v2.html?phone=${encodeURIComponent(phone)}"
+              style="width:100%; height:400px; border:none; border-radius:8px;"></iframe>
+    `,
+    width: 800,
+    showDenyButton: true,
+    confirmButtonText: "Book Another Appointment",
+    denyButtonText: "View Calendar"
+    // ❌ No cancel button = no Close button
+  }).then(result => {
+    if (result.isConfirmed) {
+      window.location.href = "index.html";
+    } else if (result.isDenied) {
+      window.location.href = "../student-calendar.html";
+    }
+  });
+}
+
+function launchFlightScheduler(phone) {
+  $.getJSON('fetch_locations.php', function (locations) {
+    const locationOptions = locations.map(l => `<option value="${l.airport_code}">${l.name}</option>`).join('');
+    Swal.fire({
+      title: 'Select Location',
+      html: `<select id="locationSel" class="swal2-select">${locationOptions}</select>`,
+      confirmButtonText: 'Next',
+      preConfirm: () => {
+        const val = $('#locationSel').val();
+        if (!val) return Swal.showValidationMessage("Please select a location");
+        return val;
+      }
+    }).then(result => {
+      if (result.isConfirmed) {
+        const locationId = result.value;
+        chooseFlightType(locationId, phone);
+      }
+    });
+  });
+}
+
+function chooseFlightType(locationId, phone) {
+  $.getJSON('fetch_flight_types.php', function (types) {
+    const html = `
+      <select id="typeSel" class="swal2-select">
+        ${types.map(t => `<option value="${t.id}" data-name="${t.name}" data-requires-cfi="${t.requires_cfi}" data-requires-aircraft="${t.requires_aircraft}">${t.name}</option>`).join('')}
+      </select>
+    `;
+
+    Swal.fire({
+      title: 'Select Type of Flight',
+      html: html,
+      confirmButtonText: 'Next',
+      preConfirm: () => {
+        const selected = $('#typeSel option:selected');
+        const typeId = selected.val();
+        const flightTypeName = selected.data('name');
+        const requiresCfi = selected.data('requires-cfi');
+        const requiresAircraft = selected.data('requires-aircraft');
+
+        if (!typeId) return Swal.showValidationMessage("Please select a flight type");
+
+        return { typeId, flightTypeName, requiresCfi, requiresAircraft };
+      }
+    }).then(result => {
+      if (result.isConfirmed) {
+        const { typeId, flightTypeName, requiresCfi, requiresAircraft } = result.value;
+
+        if (requiresAircraft) {
+          chooseAircraft(locationId, phone, typeId, flightTypeName, requiresCfi);
+        } else if (requiresCfi) {
+          chooseInstructor(locationId, null, typeId, flightTypeName, phone); // null aircraft
+        } else {
+          confirmBooking(locationId, null, typeId, flightTypeName, '', '', phone); // solo & ground
+        }
+      }
+    });
+  });
+}
+
+function chooseAircraft(locationId, phone, flightTypeId, flightTypeName, requiresCfi) {
+  $.getJSON('fetch_aircraft.php?loc=' + locationId, function (aircraft) {
+    const aircraftArray = Array.isArray(aircraft) ? aircraft : aircraft.results || [];
+
+    const html = `
+      <select id="aircraftSel" class="swal2-select">
+        ${aircraftArray.map(a => `<option value="${a.id}">${a.tail_number}</option>`).join('')}
+      </select>
+    `;
+
+    Swal.fire({
+      title: 'Select Aircraft',
+      html: html,
+      confirmButtonText: 'Next',
+      preConfirm: () => {
+        const val = $('#aircraftSel').val();
+        if (!val) return Swal.showValidationMessage("Select an aircraft");
+        return val;
+      }
+    }).then(result => {
+      if (result.isConfirmed) {
+        const aircraftId = result.value;
+
+        if (requiresCfi) {
+          chooseInstructor(locationId, aircraftId, flightTypeId, flightTypeName, phone);
+        } else {
+          confirmBooking(locationId, aircraftId, flightTypeId, flightTypeName, '', '', phone);
+        }
+      }
+    });
+  });
+}
+
+function chooseInstructor(locationId, aircraftId, flightTypeId, flightTypeName, phone) {
+  $.getJSON('fetch_instructors.php?loc=' + locationId, function (cfis) {
+    if (!Array.isArray(cfis) || cfis.length === 0) {
+      Swal.fire('No Instructors', 'No instructors available for this location.', 'error');
+      return;
+    }
+
+    const html = `
+      <select id="cfiSel" class="swal2-select">
+        ${cfis.map(c => `<option value="${c.id}">${c.name}</option>`).join('')}
+      </select>
+    `;
+
+    Swal.fire({
+      title: 'Select Instructor',
+      html: html,
+      confirmButtonText: 'Next',
+      preConfirm: () => {
+        const val = $('#cfiSel').val();
+        const name = $('#cfiSel option:selected').text();
+        if (!val) return Swal.showValidationMessage("Please select a CFI");
+        return { cfiId: val, cfiName: name };
+      }
+    }).then(result => {
+      if (result.isConfirmed) {
+        const { cfiId, cfiName } = result.value;
+        confirmBooking(locationId, aircraftId, flightTypeId, flightTypeName, cfiId, cfiName, phone);
+      }
+    });
+  });
+}
+
+function confirmBooking(locationId, aircraftId, flightTypeId, flightTypeName, cfiId, cfiName, phone) {
+  Swal.fire({
+    title: '✅ CONFIRM INFO',
+    html: `
+      <div style="font-size: 1.25rem; line-height: 2;">
+        <b>Location:</b> ${locationId}<br>
+        <b>Aircraft:</b> ${aircraftId || 'None'}<br>
+        <b>Flight Type:</b> ${flightTypeName}<br>
+        <b>Instructor:</b> ${cfiName || 'Solo Flight'}<br>
+        <b>Phone:</b> ${phone}
+      </div>
+    `,
+    confirmButtonText: 'Continue to Time Selection',
+    showCancelButton: true
+  }).then(result => {
+    if (result.isConfirmed) {
+      showTimeSelectionInModal(locationId, aircraftId, flightTypeId, flightTypeName, cfiId, cfiName, phone);
+    }
+  });
+}
+
+function showTimeSelectionInModal(locationId, aircraftId, flightTypeId, flightTypeName, cfiId, cfiName, phone) {
+  Swal.fire({
+    title: '✈️ Select Your Flight Time',
+    html: `
+      <div style="display:flex; gap:30px;">
+        <div style="flex:1;">
+          <div id="calendarContainer"></div>
+        </div>
+        <div style="flex:1;">
+          <h3>Available Times</h3>
+          <div id="timeslots" style="display:flex; flex-wrap:wrap; gap:10px;"></div>
+        </div>
+      </div>
+    `,
+    width: 900,
+    showConfirmButton: false,
+    showCloseButton: true,
+    didOpen: () => {
+      flatpickr("#calendarContainer", {
+        inline: true,
+        dateFormat: "Y-m-d",
+        minDate: "today",
+        maxDate: new Date().fp_incr(30),
+        defaultDate: "today",
+        onChange: function(selectedDates, dateStr) {
+          if (!dateStr) return;
+
+          const slotContainer = document.getElementById("timeslots");
+          slotContainer.innerHTML = "<p>Checking availability...</p>";
+
+          // 🔒 Check if student already booked a flight this day
+          fetch(`student_has_booking_on_date.php?phone=${encodeURIComponent(phone)}&date=${dateStr}`)
+            .then(res => res.json())
+            .then(data => {
+              if (data.hasBooking) {
+                slotContainer.innerHTML = `
+                  <p style="color:#1e40af; font-weight:bold; font-size:1.1rem;">
+                    <i>🚫 You already have a flight booked on this day. Please choose another date.</i>
+                  </p>`;
+                return;
+              }
+
+              // ✅ Proceed to fetch available time slots
+              const query = `date=${dateStr}&aircraft=${aircraftId}&cfi=${cfiId}`;
+              fetch('fetch_available_times.php?' + query)
+                .then(res => res.json())
+                .then(data => {
+                  slotContainer.innerHTML = "";
+
+                  if (!Array.isArray(data) || data.length === 0) {
+                    slotContainer.innerHTML = `<p style="font-style:italic;">No available slots for this day.</p>`;
+                    return;
+                  }
+
+                  data.forEach(time => {
+                    const btn = document.createElement("button");
+                    btn.className = "slot-button";
+                    btn.style = `
+                      padding:10px 16px;
+                      background:#6366f1;
+                      border:none;
+                      border-radius:6px;
+                      color:white;
+                      font-size:1rem;
+                      cursor:pointer;
+                    `;
+                    btn.innerText = time;
+                    btn.onclick = () => {
+                      finalizeBooking({
+                        locationId,
+                        aircraftId,
+                        flightTypeId,
+                        flightTypeName,
+                        cfiId,
+                        cfiName,
+                        phone,
+                        date: dateStr,
+                        time: time
+                      });
+                    };
+                    slotContainer.appendChild(btn);
+                  });
+                });
+            });
+        }
+      });
+    }
+  });
+}
+
+function getRandomFlightPrompt() {
+  const randomIndex = Math.floor(Math.random() * confirmationPrompts.length);
+  return confirmationPrompts[randomIndex];
+}
+
+function finalizeBooking(data) {
+  const sessionBlock = JSON.parse(localStorage.getItem("sessionBlock") || "{}");
+  const now = Date.now();
+  const today = new Date().toISOString().split("T")[0];
+
+  // ❌ Disallow same-day bookings
+  if (data.date === today) {
+    Swal.fire("🚫 No Same-Day Bookings", "Flights cannot be scheduled for today.", "warning");
+    return;
+  }
+
+  // 🧹 Clean expired session blocks (older than 2 hrs)
+  for (let date in sessionBlock) {
+    if ((now - sessionBlock[date]) > 2 * 60 * 60 * 1000) {
+      delete sessionBlock[date];
+    }
+  }
+
+  // ⛔ Prevent double-booking for same day during session
+  if (sessionBlock[data.date]) {
+    Swal.fire("Hold Up!", "You've already booked a flight on this day during this session.", "warning");
+    return;
+  }
+
+  console.log("🚀 Sending booking:", data);
+
+  fetch('book_flight.php', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(response => {
+    console.log("✅ Booking response:", response);
+
+    if (response.success) {
+      // ✅ Mark this day as booked in session
+      sessionBlock[data.date] = now;
+      localStorage.setItem("sessionBlock", JSON.stringify(sessionBlock));
+
+      Swal.fire({
+        icon: 'success',
+        title: 'Flight Scheduled!',
+        html: `
+          <b>Your flight has been booked for ${data.date} at ${data.time}</b><br><br>
+          <i>${getRandomFlightPrompt()}</i>
+        `,
+        showCancelButton: false,
+        showDenyButton: true,
+        confirmButtonText: 'Book Another Appointment',
+        denyButtonText: 'View My Bookings'
+      }).then(result => {
+        if (result.isConfirmed) {
+          window.location.href = 'index.html';
+        } else if (result.isDenied) {
+          showMyBookings(data.phone);
+        }
+      });
+
+    } else {
+      Swal.fire('Error', response.message || 'Something went wrong.', 'error');
+    }
+  })
+  .catch((err) => {
+    console.error("Booking error:", err);
+    Swal.fire('Error', 'Could not submit the booking request.', 'error');
+  });
+}
+
+function showMyBookings(phone) {
+  Swal.fire({
+    title: "📋 My Upcoming Flights",
+    html: `
+      <iframe src="my-flights.html?phone=${encodeURIComponent(phone)}"
+        style="width:100%; height:400px; border:none; border-radius:8px;"></iframe>
+
+      <div style="margin-top:15px; font-size:1.5rem; color:#1e40af; font-weight:bold; text-align:center;">
+        ✅ Flights update in real-time. No need to refresh!
+      </div>
+
+      <div style="margin-top:20px; text-align:center;">
+        <button onclick="window.location.href='index.html'" style="background:#6366f1; color:white; padding:10px 16px; border:none; border-radius:5px; font-weight:bold; margin:5px;">
+          Book Another Appointment
+        </button>
+        <button onclick="window.location.href='../student-calendar.html'" style="background:#ef4444; color:white; padding:10px 16px; border:none; border-radius:5px; font-weight:bold; margin:5px;">
+          View Calendar
+        </button>
+        <button onclick="window.location.href='digital-logbook.html?phone=${encodeURIComponent(phone)}'" style="background:#059669; color:white; padding:10px 16px; border:none; border-radius:5px; font-weight:bold; margin:5px;">
+          My Logbook
+        </button>
+      </div>
+    `,
+    width: 800,
+    showConfirmButton: false, // 🔥 Hide built-in Confirm
+    showDenyButton: false     // 🔥 Hide built-in Deny
+  });
+}
+
+
+  </script>
+</body>
+</html>
+
+
+

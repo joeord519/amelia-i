@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Piston Time Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; text-align: center; background: #f4f4f4; }
+    video, canvas { width: 100%; max-width: 300px; border: 1px solid #ccc; margin-bottom: 10px; }
+    button { padding: 12px 20px; margin: 10px; font-size: 16px; cursor: pointer; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h2>👋 Welcome to Piston Time Clock</h2>
+  <p id="statusMsg">Loading location and camera...</p>
+
+  <video id="video" autoplay playsinline></video>
+  <canvas id="canvas" class="hidden"></canvas>
+
+  <div>
+    <button id="clockInBtn">✅ Clock In</button>
+    <button id="clockOutBtn">⏱️ Clock Out</button>
+  </div>
+
+  <script>
+    let latitude = null;
+    let longitude = null;
+
+    // Get location
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          latitude = position.coords.latitude;
+          longitude = position.coords.longitude;
+          document.getElementById("statusMsg").textContent = "📍 Location acquired.";
+        }, function() {
+          document.getElementById("statusMsg").textContent = "⚠️ Location access denied.";
+        });
+      } else {
+        document.getElementById("statusMsg").textContent = "❌ Geolocation is not supported.";
+      }
+    }
+
+    // Camera setup
+    const video = document.getElementById('video');
+    const canvas = document.getElementById('canvas');
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(stream => { video.srcObject = stream; })
+      .catch(() => { document.getElementById("statusMsg").textContent = "⚠️ Camera access denied."; });
+
+    // Utility: Convert canvas to base64
+    function captureSelfie() {
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      canvas.getContext('2d').drawImage(video, 0, 0);
+      return canvas.toDataURL('image/jpeg');
+    }
+
+    // Handle employee ID as mobile number
+    function getEmployeeID() {
+      let id = localStorage.getItem("employee_id");
+      if (!id) {
+        do {
+          id = prompt("Enter your mobile number (digits only):");
+        } while (!/^\d{10}$/.test(id));
+        localStorage.setItem("employee_id", id);
+      }
+      return id;
+    }
+
+    // Handle Clock In / Out
+    function sendData(type) {
+      const selfie = captureSelfie();
+      const employee_id = getEmployeeID();
+
+      const payload = {
+        selfie: selfie,
+        lat: latitude,
+        lng: longitude,
+        employee_id: employee_id
+      };
+
+      fetch(type + ".php", {
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.text())
+      .then(response => alert(response))
+      .catch(err => alert("❌ Error sending data."));
+    }
+
+    document.getElementById('clockInBtn').addEventListener('click', () => sendData("clockin"));
+    document.getElementById('clockOutBtn').addEventListener('click', () => sendData("clockout"));
+
+    // Tab close warning
+    window.addEventListener("beforeunload", function(e) {
+      e.preventDefault();
+      e.returnValue = "⚠️ Closing this tab will stop GPS tracking and may impact your pay.";
+    });
+
+    getLocation();
+  </script>
+
+  <!-- Location ping script -->
+  <script src="js/location-ping.js"></script>
+</body>
+</html>
+

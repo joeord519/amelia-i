@@ -1,0 +1,27 @@
+/* 🔹 Stack Buttons Vertically */
+.swal-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.swal-btn {
+    background-color: #004AAD;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+}
+
+.swal-btn:hover {
+    background-color: #003580;
+}
+

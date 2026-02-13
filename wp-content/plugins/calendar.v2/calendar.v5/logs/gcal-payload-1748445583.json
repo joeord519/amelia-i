@@ -1,0 +1,20 @@
+{
+    "id": "1462",
+    "start_time": "2025-05-27 10:00:00",
+    "end_time": "2025-05-27 11:30:00",
+    "cfi_id": "15",
+    "flight_type": "Ground Lesson",
+    "event_title": "Ground Lesson x 2",
+    "students": [
+        {
+            "id": "177",
+            "name": "Joe Ord",
+            "phone": "(636) 328-3750"
+        },
+        {
+            "id": "240",
+            "name": "Meghen Ord",
+            "phone": "(636) 328-7806"
+        }
+    ]
+}

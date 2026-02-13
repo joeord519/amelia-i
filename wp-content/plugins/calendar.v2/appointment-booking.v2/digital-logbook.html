@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Digital Logbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .logbook-entry {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .details {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .signature {
+      margin-top: 10px;
+    }
+    .upload-btn {
+      margin-top: 12px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .upload-btn:hover {
+      background: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 My Digital Logbook</h1>
+  <div id="logbookContainer">
+    <p style="text-align:center; color:#777;">Loading completed flights...</p>
+  </div>
+
+  <script>
+    const phone = new URLSearchParams(window.location.search).get("phone");
+    const container = document.getElementById("logbookContainer");
+
+    if (!phone) {
+      container.innerHTML = "<p style='text-align:center;'>Missing phone number. Please return to the start.</p>";
+    } else {
+      loadLogbook();
+    }
+
+    function loadLogbook() {
+      fetch(`view_logs.php?phone=${encodeURIComponent(phone)}`)
+        .then(res => res.json())
+        .then(entries => {
+          if (!entries || entries.length === 0) {
+            container.innerHTML = "<p style='text-align:center;'>No completed flights found.</p>";
+            return;
+          }
+
+          container.innerHTML = "";
+
+          entries.forEach(flight => {
+            const div = document.createElement("div");
+            div.className = "logbook-entry";
+
+            const sigUrl = flight.cfi_signature 
+              ? `https://amelia-i.com/wp-content/plugins/checkout.basic/${flight.cfi_signature}`
+              : null;
+
+            div.innerHTML = `
+              <div class="header">${flight.tail_number} — ${new Date(flight.start_time).toLocaleString()}</div>
+              <div class="details">
+                ✈️ Flight Time: ${flight.total_flight_time} hrs<br>
+                🧑‍🏫 Ground Time: ${flight.ground_time} hrs<br>
+                👨‍✈️ CFI: ${flight.cfi_first || ''} ${flight.cfi_last || ''} — Cert #${flight.cfi_cert_id || 'N/A'}
+              </div>
+              ${sigUrl ? `<div class="signature"><img src="${sigUrl}" alt="CFI Signature" style="max-height:80px;"></div>` : ''}
+              <button class="upload-btn" onclick="uploadLogbookMedia(${flight.id})">📤 Upload Files</button>
+            `;
+
+            container.appendChild(div);
+          });
+        });
+    }
+
+    function uploadLogbookMedia(logId) {
+      Swal.fire({
+        title: '📤 Upload Logbook Files',
+        html: `<input type="file" id="logFiles" multiple accept="image/*,video/*,application/pdf" class="swal2-file">`,
+        confirmButtonText: 'Upload',
+        preConfirm: () => {
+          const files = document.getElementById('logFiles').files;
+          if (!files.length) return Swal.showValidationMessage('Please select at least one file');
+          return Array.from(files);
+        }
+      }).then(async result => {
+        if (!result.isConfirmed) return;
+        const files = result.value;
+
+        for (const file of files) {
+          const res = await fetch('../api/generate_presigned_url.php', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({ filename: file.name, filetype: file.type })
+          });
+          const data = await res.json();
+
+          if (!data.url) {
+            Swal.fire("Error", data.error || "Upload failed", "error");
+            return;
+          }
+
+          await fetch(data.url, {
+            method: 'PUT',
+            headers: { 'Content-Type': file.type },
+            body: file
+          });
+
+          await fetch('../api/save_uploaded_logbook.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              flight_log_id: logId,
+              file_url: data.final_url,
+              file_type: file.type
+            })
+          });
+        }
+
+        Swal.fire("✅ Done", "Files uploaded successfully.", "success");
+      });
+    }
+  </script>
+
+</b

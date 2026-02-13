@@ -1,0 +1,38 @@
+/* FullCalendar Custom Styling */
+.fc {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.fc-toolbar {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+.fc-event {
+    background-color: #28a745;
+    border: none;
+    color: white;
+    padding: 5px;
+}
+
+.fc-daygrid-event {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fc-button {
+    background: #007bff !important;
+    color: white !important;
+    border: none !important;
+}
+
+.fc-button:hover {
+    background: #0056b3 !important;
+}
+
+.fc-daygrid-block-event {
+    border-radius: 4px;
+}

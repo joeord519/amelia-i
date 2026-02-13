@@ -1,0 +1,13 @@
+[11-Jun-2025 06:20:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/appointment-booking/api/vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/appointment-booking/api/generate_presigned_url.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/appointment-booking/api/generate_presigned_url.php on line 2
+[13-Jun-2025 05:13:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/api/../../db_connect.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/api/save_uploaded_logbook.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/api/save_uploaded_logbook.php on line 2
+[13-Jun-2025 05:18:18 UTC] PHP Warning:  Undefined variable $db in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/api/save_uploaded_logbook.php on line 22
+[13-Jun-2025 05:18:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/api/save_uploaded_logbook.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v2/api/save_uploaded_logbook.php on line 22

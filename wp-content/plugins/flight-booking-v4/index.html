@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Student Verification Section (Only ONE form now) -->
+    <div id="verification-section">
+        <h2>Flight Booking Access Verification</h2>
+        <form id="verifyStudentForm">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="(XXX) XXX-XXXX" required>
+
+            <label for="security_word">Security Word:</label>
+            <input type="password" id="security_word" name="security_word" placeholder="Enter Security Word" required>
+
+            <button type="submit">Verify</button>
+        </form>
+    </div>
+
+    <!-- Hidden Eligibility Check Section -->
+    <div id="eligibility-section" style="display: none;">
+        <h2>Flight Eligibility Check</h2>
+        <p>Checking your flight eligibility...</p>
+    </div>
+
+    <script src="script.js?v=<?= time(); ?>"></script>
+
+</body>
+</html>

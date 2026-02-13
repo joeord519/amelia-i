@@ -1,0 +1,88 @@
+[22-Feb-2025 01:59:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 5
+[22-Feb-2025 02:00:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 5
+[22-Feb-2025 02:02:20 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 5
+[22-Feb-2025 02:02:21 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 5
+[22-Feb-2025 02:02:58 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:03:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:03:04 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:03:14 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:03:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:03:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:03:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:03:27 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:03:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:04:55 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:07:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:07:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:08:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:08:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:19:29 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 02:19:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 03:33:35 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10
+[22-Feb-2025 03:33:38 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get_results() on null in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/themes/astra/scheduler.php on line 10

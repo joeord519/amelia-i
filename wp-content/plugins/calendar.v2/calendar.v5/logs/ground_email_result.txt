@@ -1,0 +1,84 @@
+{"message":"to parameter is not a valid address. please check documentation"}
+
+{"message":"to parameter is not a valid address. please check documentation"}
+
+{"id":"<20250529194428.b31dffbfa8c6fb2c@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529194428.5a779c0130774ce1@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529201413.e9e4e99f317fb1d1@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529201414.2460827e26f4d81a@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529202451.39edd2fadeb4ec12@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529202451.875b181955a3d898@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529203104.18403ea8c9dbaa50@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529203104.bd98e78e8897d71d@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529203733.c22623343ba9e81d@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250529203733.91ec81fef22100c4@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250530035148.b16c9ef8dd3c0e16@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250530035148.2dc17a8336f25691@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250530035717.fb89168f667f3f2a@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250530035717.e610ebcbdff3d951@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250530060137.10efdbed4a59dd6f@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250530060137.a5e69dea001a1e71@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250531044543.e4403de17202c300@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250531044544.0ab3c5899f3675da@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250531044843.0b9a94ac79788c5e@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250531044843.0498d57a5eed9d39@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250531045136.4e444497cf4f6250@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250531045136.123d48fc758e01ea@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250531045406.12f62c50623c53f2@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250531045406.a3ed74d8fe9e81c7@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011213.66c746f92891ca89@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011230.194ba872c4012db7@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011245.af9682dba8118daa@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011516.1d5ed3789da4dd64@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011530.769e097e860ed0b1@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011549.cadd0db1241846c7@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011606.d8731d10c8d117c9@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011814.7785e273dd64ef2c@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250603011827.5e2efa31df6c11fa@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250604011747.a1c82ee828ceb11e@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250611154354.09c2af60dae26e33@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250701013741.3fd72cee86e76a70@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250702165419.1fb1bd955c52eb11@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250716191123.7754cdd08b5f8b3b@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250725210902.42404721fd575b72@mg.amelia-i.com>","message":"Queued. Thank you."}
+
+{"id":"<20250726132635.9bdf0e726fd3fa32@mg.amelia-i.com>","message":"Queued. Thank you."}
+

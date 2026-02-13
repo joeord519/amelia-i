@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .login-container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+    input {
+      font-size: 1rem;
+      padding: 12px;
+      width: 90%;
+      margin: 20px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      font-size: 1rem;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      background: #2563eb;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1e40af;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>📲 Enter Your Phone Number</h2>
+    <input type="tel" id="phone" placeholder="(XXX) XXX-XXXX" maxlength="14">
+    <br>
+    <button onclick="showMyBookings(phone)">View My Flights</button>
+  </div>
+
+  <script>
+    document.getElementById('phone').addEventListener('input', function () {
+      let x = this.value.replace(/\D/g, '');
+      this.value = x.length > 6
+        ? `(${x.slice(0,3)}) ${x.slice(3,6)}-${x.slice(6,10)}`
+        : x.length > 3
+        ? `(${x.slice(0,3)}) ${x.slice(3,6)}`
+        : `(${x.slice(0,3)}`;
+    });
+
+    function goToDashboard() {
+      const phone = document.getElementById("phone").value.trim();
+      if (!/^\(\d{3}\) \d{3}-\d{4}$/.test(phone)) {
+        Swal.fire("Oops", "Please enter a valid phone number.", "warning");
+        return;
+      }
+      window.location.href = `my-flights-v2.html?phone=${encodeURIComponent(phone)}`;
+    }
+  </script>
+
+</body>
+</html>

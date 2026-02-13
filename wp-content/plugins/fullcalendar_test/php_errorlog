@@ -1,0 +1,18 @@
+[22-Feb-2025 09:34:21 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 36
+[22-Feb-2025 09:37:04 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 36
+[22-Feb-2025 09:37:05 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 36
+[22-Feb-2025 09:38:35 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 36
+[22-Feb-2025 09:38:49 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 36
+[23-Feb-2025 08:35:30 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 3
+[23-Feb-2025 08:37:51 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 3
+[23-Feb-2025 08:40:15 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 3
+[23-Feb-2025 08:40:17 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 3
+[23-Feb-2025 08:40:19 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 3
+[23-Feb-2025 08:40:20 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 3
+[23-Feb-2025 08:40:21 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 3
+[23-Feb-2025 08:45:47 UTC] PHP Parse error:  Unclosed '{' on line 21 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 87
+[23-Feb-2025 08:48:51 UTC] PHP Parse error:  Unclosed '{' on line 21 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 87
+[23-Feb-2025 08:56:22 UTC] PHP Parse error:  Unclosed '{' on line 21 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 87
+[23-Feb-2025 08:57:30 UTC] PHP Parse error:  Unclosed '{' on line 21 in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 87
+[24-Feb-2025 03:27:30 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 119
+[24-Feb-2025 03:28:59 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/fullcalendar_test/get-events.php on line 119

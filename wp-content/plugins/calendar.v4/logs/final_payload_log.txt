@@ -1,0 +1,2546 @@
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-06 12:00
+            [end] => 2025-06-06 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => TBD
+            [cfi_phone] => N/A
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-06 12:00
+            [end] => 2025-06-06 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => TBD
+            [cfi_phone] => N/A
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 09:00
+            [end] => 2025-06-02 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => undefined
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 09:00
+            [end] => 2025-06-02 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => undefined
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-30 10:30
+            [end] => 2025-05-30 11:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => undefined
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-30 10:30
+            [end] => 2025-05-30 11:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => undefined
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 11:30
+            [end] => 2025-06-02 12:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 11:30
+            [end] => 2025-06-02 12:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-08 09:00
+            [end] => 2025-06-08 10:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-08 09:00
+            [end] => 2025-06-08 10:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 13:00
+            [end] => 2025-06-02 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Meghen Ord, Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 13:00
+            [end] => 2025-06-02 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Meghen Ord, Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-01 17:30
+            [end] => 2025-06-01 18:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-01 17:30
+            [end] => 2025-06-01 18:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 07:00
+            [end] => 2025-05-31 08:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 07:00
+            [end] => 2025-05-31 08:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 08:00
+            [end] => 2025-05-31 09:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 10:00
+            [end] => 2025-05-31 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 10:00
+            [end] => 2025-05-31 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 15:00
+            [end] => 2025-05-31 16:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 15:00
+            [end] => 2025-05-31 16:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 17:00
+            [end] => 2025-05-31 18:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-05-31 17:00
+            [end] => 2025-05-31 18:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 08:30
+            [end] => 2025-06-02 09:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-01 08:00
+            [end] => 2025-06-01 09:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-03 06:30
+            [end] => 2025-06-03 07:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-01 10:30
+            [end] => 2025-06-01 11:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-01 10:30
+            [end] => 2025-06-01 11:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-01 10:30
+            [end] => 2025-06-01 11:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 10:00
+            [end] => 2025-06-02 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 10:00
+            [end] => 2025-06-02 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 10:00
+            [end] => 2025-06-02 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 08:00
+            [end] => 2025-06-02 10:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 08:00
+            [end] => 2025-06-02 10:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 12:00
+            [end] => 2025-06-02 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-02 12:00
+            [end] => 2025-06-02 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-04 07:30
+            [end] => 2025-06-04 08:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-04 07:30
+            [end] => 2025-06-04 08:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-03 10:00
+            [end] => 2025-06-03 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => meghen@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-03 10:00
+            [end] => 2025-06-03 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Meghen Ord
+            [student_phone] => (636) 328-7806
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => (314) 440-2361
+            [classmates] => Joe Ord, Meghen Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-04 10:00
+            [end] => 2025-06-04 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Blake Remillard
+            [cfi_phone] => (678) 777-0565
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-04 10:00
+            [end] => 2025-06-04 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-04 10:00
+            [end] => 2025-06-04 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-05 11:00
+            [end] => 2025-06-05 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-05 11:00
+            [end] => 2025-06-05 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Jack Norrenberns
+            [cfi_phone] => (618) 606-4041
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-05 11:00
+            [end] => 2025-06-05 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Taylor Melbrod
+            [cfi_phone] => (314) 681-4018
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-05 11:00
+            [end] => 2025-06-05 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Kirby Buchheit
+            [cfi_phone] => (573) 605-9564
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-05 12:00
+            [end] => 2025-06-05 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Josh Partl
+            [cfi_phone] => (618) 531-9029
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-05 12:00
+            [end] => 2025-06-05 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Dalton Lyskowski
+            [cfi_phone] => (385) 245-3137
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => joe@flypiston.com
+    [payload] => Array
+        (
+            [start] => 2025-06-03 20:30
+            [end] => 2025-06-03 21:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joe Ord
+            [student_phone] => (636) 328-3750
+            [tail_number] => N/A
+            [cfi_name] => Joe Ord
+            [cfi_phone] => 636-328-3750
+            [classmates] => Joe Ord
+        )
+
+)
+Array
+(
+    [to] => jmkuyk@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-06-11 09:00
+            [end] => 2025-06-11 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => John Kuykendall
+            [student_phone] => (636) 675-6262
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => John Kuykendall
+        )
+
+)
+Array
+(
+    [to] => evan.carlson04@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-07-02 17:00
+            [end] => 2025-07-02 18:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Evan Carlson
+            [student_phone] => (915) 504-4463
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Evan Carlson
+        )
+
+)
+Array
+(
+    [to] => dan.mistuque.mycom@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-07-03 14:00
+            [end] => 2025-07-03 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Daniel Mistiuk
+            [student_phone] => (314) 221-2051
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Daniel Mistiuk
+        )
+
+)
+Array
+(
+    [to] => Matheus.macfadden@outlook.com.br
+    [payload] => Array
+        (
+            [start] => 2025-07-29 17:00
+            [end] => 2025-07-29 19:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Matheus Guimaraes
+            [student_phone] => (636) 706-1602
+            [tail_number] => N/A
+            [cfi_name] => Taylor Melbrod
+            [cfi_phone] => (314) 681-4018
+            [classmates] => Matheus Guimaraes
+        )
+
+)
+Array
+(
+    [to] => evan.carlson04@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-07-28 13:00
+            [end] => 2025-07-28 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Evan Carlson
+            [student_phone] => (915) 504-4463
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Evan Carlson
+        )
+
+)
+Array
+(
+    [to] => ryanbaldridge@me.com
+    [payload] => Array
+        (
+            [start] => 2025-07-26 12:00
+            [end] => 2025-07-26 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ryan Baldridge
+            [student_phone] => (314) 504-4083
+            [tail_number] => N/A
+            [cfi_name] => Blake Remillard
+            [cfi_phone] => (678) 777-0565
+            [classmates] => Ryan Baldridge
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-08-16 12:00
+            [end] => 2025-08-16 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => gwindzr21@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-08-14 10:00
+            [end] => 2025-08-14 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Gavin Windsor
+            [student_phone] => (618) 791-1232
+            [tail_number] => N/A
+            [cfi_name] => Josh Partl
+            [cfi_phone] => (618) 531-9029
+            [classmates] => Gavin Windsor
+        )
+
+)
+Array
+(
+    [to] => ellebell0004@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-08-27 13:30
+            [end] => 2025-08-27 15:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ellie Prusacki
+            [student_phone] => (314) 698-3647
+            [tail_number] => N/A
+            [cfi_name] => Taylor Melbrod
+            [cfi_phone] => (314) 681-4018
+            [classmates] => Ellie Prusacki
+        )
+
+)
+Array
+(
+    [to] => ellebell0004@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-08-28 09:00
+            [end] => 2025-08-28 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ellie Prusacki
+            [student_phone] => (314) 698-3647
+            [tail_number] => N/A
+            [cfi_name] => Taylor Melbrod
+            [cfi_phone] => (314) 681-4018
+            [classmates] => Ellie Prusacki
+        )
+
+)
+Array
+(
+    [to] => ellebell0004@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-08-29 09:00
+            [end] => 2025-08-29 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ellie Prusacki
+            [student_phone] => (314) 698-3647
+            [tail_number] => N/A
+            [cfi_name] => Taylor Melbrod
+            [cfi_phone] => (314) 681-4018
+            [classmates] => Ellie Prusacki
+        )
+
+)
+Array
+(
+    [to] => gwindzr21@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-08-26 11:00
+            [end] => 2025-08-26 12:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Gavin Windsor
+            [student_phone] => (618) 791-1232
+            [tail_number] => N/A
+            [cfi_name] => Josh Partl
+            [cfi_phone] => (618) 531-9029
+            [classmates] => Gavin Windsor
+        )
+
+)
+Array
+(
+    [to] => gwindzr21@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-05 13:00
+            [end] => 2025-09-05 14:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Gavin Windsor
+            [student_phone] => (618) 791-1232
+            [tail_number] => N/A
+            [cfi_name] => Josh Partl
+            [cfi_phone] => (618) 531-9029
+            [classmates] => Gavin Windsor
+        )
+
+)
+Array
+(
+    [to] => ellebell0004@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-03 17:00
+            [end] => 2025-09-03 19:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ellie Prusacki
+            [student_phone] => (314) 698-3647
+            [tail_number] => N/A
+            [cfi_name] => Taylor Melbrod
+            [cfi_phone] => (314) 681-4018
+            [classmates] => Ellie Prusacki
+        )
+
+)
+Array
+(
+    [to] => tam143235@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-02 16:00
+            [end] => 2025-09-02 18:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tyler Moore
+            [student_phone] => (314) 304-6131
+            [tail_number] => N/A
+            [cfi_name] => Taylor Melbrod
+            [cfi_phone] => (314) 681-4018
+            [classmates] => Tyler Moore
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-08-30 11:00
+            [end] => 2025-08-30 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-06 14:00
+            [end] => 2025-09-06 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-07 11:00
+            [end] => 2025-09-07 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-07 13:00
+            [end] => 2025-09-07 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-08 10:00
+            [end] => 2025-09-08 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => joey.mclaughlin08@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-08 17:30
+            [end] => 2025-09-08 19:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Joey McLaughlin
+            [student_phone] => (314) 442-5454
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Joey McLaughlin
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-09 11:00
+            [end] => 2025-09-09 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-12 16:00
+            [end] => 2025-09-12 18:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-12 15:00
+            [end] => 2025-09-12 16:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-13 11:00
+            [end] => 2025-09-13 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-13 13:00
+            [end] => 2025-09-13 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-15 16:30
+            [end] => 2025-09-15 18:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-15 18:30
+            [end] => 2025-09-15 20:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-16 16:30
+            [end] => 2025-09-16 18:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => tlmoser67@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-16 18:30
+            [end] => 2025-09-16 20:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Tom Moser
+            [student_phone] => (573) 368-1574
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Tom Moser
+        )
+
+)
+Array
+(
+    [to] => rhellermd@aol.com
+    [payload] => Array
+        (
+            [start] => 2025-09-12 13:00
+            [end] => 2025-09-12 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ross Heller
+            [student_phone] => (314) 606-5953
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Ross Heller
+        )
+
+)
+Array
+(
+    [to] => regan.e.gorman@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-11 08:00
+            [end] => 2025-09-11 09:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Regan Gorman
+            [student_phone] => (918) 914-2009
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Regan Gorman
+        )
+
+)
+Array
+(
+    [to] => gwindzr21@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-12 13:00
+            [end] => 2025-09-12 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Gavin Windsor
+            [student_phone] => (618) 791-1232
+            [tail_number] => N/A
+            [cfi_name] => Josh Partl
+            [cfi_phone] => (618) 531-9029
+            [classmates] => Gavin Windsor
+        )
+
+)
+Array
+(
+    [to] => rhellermd@aol.com
+    [payload] => Array
+        (
+            [start] => 2025-09-14 16:00
+            [end] => 2025-09-14 17:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ross Heller
+            [student_phone] => (314) 606-5953
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Ross Heller
+        )
+
+)
+Array
+(
+    [to] => barry_bosco@yahoo.com
+    [payload] => Array
+        (
+            [start] => 2025-09-15 10:00
+            [end] => 2025-09-15 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Barry Calhoun
+            [student_phone] => (314) 620-4831
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Barry Calhoun
+        )
+
+)
+Array
+(
+    [to] => jwdaigle1@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-16 18:30
+            [end] => 2025-09-16 20:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Justin Daigle
+            [student_phone] => (703) 887-7997
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Justin Daigle
+        )
+
+)
+Array
+(
+    [to] => ellebell0004@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-16 14:00
+            [end] => 2025-09-16 16:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ellie Prusacki
+            [student_phone] => (314) 698-3647
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Ellie Prusacki
+        )
+
+)
+Array
+(
+    [to] => rhellermd@aol.com
+    [payload] => Array
+        (
+            [start] => 2025-09-17 15:30
+            [end] => 2025-09-17 17:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ross Heller
+            [student_phone] => (314) 606-5953
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Ross Heller
+        )
+
+)
+Array
+(
+    [to] => jwdaigle1@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-17 15:00
+            [end] => 2025-09-17 17:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Justin Daigle
+            [student_phone] => (703) 887-7997
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Justin Daigle
+        )
+
+)
+Array
+(
+    [to] => gwindzr21@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-25 14:00
+            [end] => 2025-09-25 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Gavin Windsor
+            [student_phone] => (618) 791-1232
+            [tail_number] => N/A
+            [cfi_name] => Josh Partl
+            [cfi_phone] => (618) 531-9029
+            [classmates] => Gavin Windsor
+        )
+
+)
+Array
+(
+    [to] => nloopstra@outlook.com
+    [payload] => Array
+        (
+            [start] => 2025-09-27 10:30
+            [end] => 2025-09-27 11:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Nathan Loopstra
+            [student_phone] => (636) 432-6166
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Nathan Loopstra
+        )
+
+)
+Array
+(
+    [to] => elib14@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-22 16:00
+            [end] => 2025-09-22 17:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Eli Ball
+            [student_phone] => (815) 904-4359
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Eli Ball
+        )
+
+)
+Array
+(
+    [to] => dananoanic@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-23 14:00
+            [end] => 2025-09-23 15:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Danny Anic
+            [student_phone] => (314) 828-9060
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Danny Anic
+        )
+
+)
+Array
+(
+    [to] => sidmc2009@aol.com
+    [payload] => Array
+        (
+            [start] => 2025-09-29 10:30
+            [end] => 2025-09-29 12:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Sidney McManus
+            [student_phone] => (314) 749-5939
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Sidney McManus
+        )
+
+)
+Array
+(
+    [to] => jacksonspielberg@icloud.com
+    [payload] => Array
+        (
+            [start] => 2025-09-29 11:30
+            [end] => 2025-09-29 13:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jackson Spielberg
+            [student_phone] => (314) 324-4812
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Jackson Spielberg
+        )
+
+)
+Array
+(
+    [to] => barry_bosco@yahoo.com
+    [payload] => Array
+        (
+            [start] => 2025-09-30 14:00
+            [end] => 2025-09-30 16:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Barry Calhoun
+            [student_phone] => (314) 620-4831
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Barry Calhoun
+        )
+
+)
+Array
+(
+    [to] => dylansoar@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-09-30 14:00
+            [end] => 2025-09-30 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Dylan Soar
+            [student_phone] => (636) 730-0403
+            [tail_number] => N/A
+            [cfi_name] => Nick A. Amsler
+            [cfi_phone] => (484) 767-5963
+            [classmates] => Dylan Soar
+        )
+
+)
+Array
+(
+    [to] => elib14@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-10-03 16:00
+            [end] => 2025-10-03 18:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Eli Ball
+            [student_phone] => (815) 904-4359
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Eli Ball
+        )
+
+)
+Array
+(
+    [to] => elib14@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-10-03 17:00
+            [end] => 2025-10-03 19:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Eli Ball
+            [student_phone] => (815) 904-4359
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Eli Ball
+        )
+
+)
+Array
+(
+    [to] => charlenecayas@icloud.com
+    [payload] => Array
+        (
+            [start] => 2025-10-06 13:00
+            [end] => 2025-10-06 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Charlene Cayas
+            [student_phone] => (858) 322-9581
+            [tail_number] => N/A
+            [cfi_name] => Dalton Lyskowski
+            [cfi_phone] => (385) 245-3137
+            [classmates] => Charlene Cayas
+        )
+
+)
+Array
+(
+    [to] => ellebell0004@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-10-09 08:00
+            [end] => 2025-10-09 09:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ellie Prusacki
+            [student_phone] => (314) 698-3647
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Ellie Prusacki
+        )
+
+)
+Array
+(
+    [to] => jacksonspielberg@icloud.com
+    [payload] => Array
+        (
+            [start] => 2025-10-09 11:30
+            [end] => 2025-10-09 12:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jackson Spielberg
+            [student_phone] => (314) 324-4812
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Jackson Spielberg
+        )
+
+)
+Array
+(
+    [to] => sidmc2009@aol.com
+    [payload] => Array
+        (
+            [start] => 2025-10-15 09:30
+            [end] => 2025-10-15 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Sidney McManus
+            [student_phone] => (314) 749-5939
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Sidney McManus
+        )
+
+)
+Array
+(
+    [to] => gwindzr21@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-10-17 11:00
+            [end] => 2025-10-17 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Gavin Windsor
+            [student_phone] => (618) 791-1232
+            [tail_number] => N/A
+            [cfi_name] => Dalton Lyskowski
+            [cfi_phone] => (385) 245-3137
+            [classmates] => Gavin Windsor
+        )
+
+)
+Array
+(
+    [to] => johnhaleen1982@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-10-15 13:00
+            [end] => 2025-10-15 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => John Haleen
+            [student_phone] => (314) 371-5695
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => John Haleen
+        )
+
+)
+Array
+(
+    [to] => jacksonspielberg@icloud.com
+    [payload] => Array
+        (
+            [start] => 2025-10-21 11:00
+            [end] => 2025-10-21 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jackson Spielberg
+            [student_phone] => (314) 324-4812
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Jackson Spielberg
+        )
+
+)
+Array
+(
+    [to] => oceanccole@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-10-28 11:30
+            [end] => 2025-10-28 12:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Ocean Cole
+            [student_phone] => (907) 313-9701
+            [tail_number] => N/A
+            [cfi_name] => Jack Tapia
+            [cfi_phone] => (636) 980-6268
+            [classmates] => Ocean Cole
+        )
+
+)
+Array
+(
+    [to] => jacksonspielberg@icloud.com
+    [payload] => Array
+        (
+            [start] => 2025-10-29 10:30
+            [end] => 2025-10-29 11:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jackson Spielberg
+            [student_phone] => (314) 324-4812
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Jackson Spielberg
+        )
+
+)
+Array
+(
+    [to] => edwardbcarr@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-02 14:30
+            [end] => 2025-11-02 16:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Eddie Carr
+            [student_phone] => (310) 883-3607
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Eddie Carr
+        )
+
+)
+Array
+(
+    [to] => zachstevens34@yahoo.com
+    [payload] => Array
+        (
+            [start] => 2025-11-12 09:00
+            [end] => 2025-11-12 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Zach Stevens
+            [student_phone] => (913) 313-9108
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Zach Stevens
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-07 10:30
+            [end] => 2025-11-07 12:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => edwardbcarr@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-04 12:30
+            [end] => 2025-11-04 14:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Eddie Carr
+            [student_phone] => (310) 883-3607
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Eddie Carr
+        )
+
+)
+Array
+(
+    [to] => arcadesquests@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-07 08:30
+            [end] => 2025-11-07 10:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jaden Christensen
+            [student_phone] => (636) 970-9674
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Jaden Christensen
+        )
+
+)
+Array
+(
+    [to] => edwardbcarr@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-11 15:00
+            [end] => 2025-11-11 17:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Eddie Carr
+            [student_phone] => (310) 883-3607
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Eddie Carr
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-06 13:00
+            [end] => 2025-11-06 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-10 10:00
+            [end] => 2025-11-10 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => dylansoar@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-07 18:30
+            [end] => 2025-11-07 20:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Dylan Soar
+            [student_phone] => (636) 730-0403
+            [tail_number] => N/A
+            [cfi_name] => Nick A. Amsler
+            [cfi_phone] => (484) 767-5963
+            [classmates] => Dylan Soar
+        )
+
+)
+Array
+(
+    [to] => edwardbcarr@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-09 14:30
+            [end] => 2025-11-09 16:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Eddie Carr
+            [student_phone] => (310) 883-3607
+            [tail_number] => N/A
+            [cfi_name] => Nick A. Amsler
+            [cfi_phone] => (484) 767-5963
+            [classmates] => Eddie Carr
+        )
+
+)
+Array
+(
+    [to] => zachstevens34@yahoo.com
+    [payload] => Array
+        (
+            [start] => 2025-11-13 09:30
+            [end] => 2025-11-13 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Zach Stevens
+            [student_phone] => (913) 313-9108
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Zach Stevens
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-11-19 09:00
+            [end] => 2025-11-19 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => hurricane2gze@yahoo.com
+    [payload] => Array
+        (
+            [start] => 2025-12-12 09:00
+            [end] => 2025-12-12 10:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Mike Alexis
+            [student_phone] => (916) 730-8864
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Mike Alexis
+        )
+
+)
+Array
+(
+    [to] => draketp12345@gmail.com
+    [payload] => Array
+        (
+            [start] => 2025-12-19 13:00
+            [end] => 2025-12-19 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Drake Polacek
+            [student_phone] => (618) 803-8023
+            [tail_number] => N/A
+            [cfi_name] => Jack Tapia
+            [cfi_phone] => (636) 980-6268
+            [classmates] => Drake Polacek
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-02 10:00
+            [end] => 2026-01-02 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => jonathan.g.conlan@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-07 12:30
+            [end] => 2026-01-07 13:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jonathan Conlan
+            [student_phone] => (704) 560-2499
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Jonathan Conlan
+        )
+
+)
+Array
+(
+    [to] => jonathan.g.conlan@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-08 12:00
+            [end] => 2026-01-08 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jonathan Conlan
+            [student_phone] => (704) 560-2499
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Jonathan Conlan
+        )
+
+)
+Array
+(
+    [to] => jonathan.g.conlan@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-13 11:00
+            [end] => 2026-01-13 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jonathan Conlan
+            [student_phone] => (704) 560-2499
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Jonathan Conlan
+        )
+
+)
+Array
+(
+    [to] => jonathan.g.conlan@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-16 14:00
+            [end] => 2026-01-16 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jonathan Conlan
+            [student_phone] => (704) 560-2499
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Jonathan Conlan
+        )
+
+)
+Array
+(
+    [to] => jonathan.g.conlan@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-10 17:00
+            [end] => 2026-01-10 18:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jonathan Conlan
+            [student_phone] => (704) 560-2499
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Jonathan Conlan
+        )
+
+)
+Array
+(
+    [to] => sailorboy21@outlook.com
+    [payload] => Array
+        (
+            [start] => 2026-01-03 07:00
+            [end] => 2026-01-03 09:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jeff Luchetti
+            [student_phone] => (925) 548-2639
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Jeff Luchetti
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-06 10:00
+            [end] => 2026-01-06 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => domartvargas@icloud.com
+    [payload] => Array
+        (
+            [start] => 2026-01-07 16:00
+            [end] => 2026-01-07 17:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Dominic Vargas
+            [student_phone] => (314) 624-2125
+            [tail_number] => N/A
+            [cfi_name] => Igor Leao Castiliho
+            [cfi_phone] => (314) 600-0309
+            [classmates] => Dominic Vargas
+        )
+
+)
+Array
+(
+    [to] => jonathan.g.conlan@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-08 11:00
+            [end] => 2026-01-08 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jonathan Conlan
+            [student_phone] => (704) 560-2499
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Jonathan Conlan
+        )
+
+)
+Array
+(
+    [to] => jonathan.g.conlan@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-13 12:00
+            [end] => 2026-01-13 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jonathan Conlan
+            [student_phone] => (704) 560-2499
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Jonathan Conlan
+        )
+
+)
+Array
+(
+    [to] => jonwatts0101@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-11 08:00
+            [end] => 2026-01-11 09:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jon Watts
+            [student_phone] => (314) 556-4371
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Jon Watts
+        )
+
+)
+Array
+(
+    [to] => draketp12345@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-09 13:00
+            [end] => 2026-01-09 14:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Drake Polacek
+            [student_phone] => (618) 803-8023
+            [tail_number] => N/A
+            [cfi_name] => Jack Tapia
+            [cfi_phone] => (636) 980-6268
+            [classmates] => Drake Polacek
+        )
+
+)
+Array
+(
+    [to] => jonathan.g.conlan@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-01-10 10:00
+            [end] => 2026-01-10 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jonathan Conlan
+            [student_phone] => (704) 560-2499
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Jonathan Conlan
+        )
+
+)
+Array
+(
+    [to] => jonwatts0101@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-05 10:00
+            [end] => 2026-02-05 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jon Watts
+            [student_phone] => (314) 556-4371
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Jon Watts
+        )
+
+)
+Array
+(
+    [to] => draketp12345@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-05 10:00
+            [end] => 2026-02-05 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Drake Polacek
+            [student_phone] => (618) 803-8023
+            [tail_number] => N/A
+            [cfi_name] => Jack Tapia
+            [cfi_phone] => (636) 980-6268
+            [classmates] => Drake Polacek
+        )
+
+)
+Array
+(
+    [to] => jonwatts0101@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-10 09:00
+            [end] => 2026-02-10 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jon Watts
+            [student_phone] => (314) 556-4371
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Jon Watts
+        )
+
+)
+Array
+(
+    [to] => draketp12345@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-10 09:00
+            [end] => 2026-02-10 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Drake Polacek
+            [student_phone] => (618) 803-8023
+            [tail_number] => N/A
+            [cfi_name] => Jack Tapia
+            [cfi_phone] => (636) 980-6268
+            [classmates] => Drake Polacek
+        )
+
+)
+Array
+(
+    [to] => jonwatts0101@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-13 09:00
+            [end] => 2026-02-13 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jon Watts
+            [student_phone] => (314) 556-4371
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Jon Watts
+        )
+
+)
+Array
+(
+    [to] => draketp12345@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-13 09:00
+            [end] => 2026-02-13 11:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Drake Polacek
+            [student_phone] => (618) 803-8023
+            [tail_number] => N/A
+            [cfi_name] => Jack Tapia
+            [cfi_phone] => (636) 980-6268
+            [classmates] => Drake Polacek
+        )
+
+)
+Array
+(
+    [to] => jonwatts0101@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-27 11:00
+            [end] => 2026-02-27 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jon Watts
+            [student_phone] => (314) 556-4371
+            [tail_number] => N/A
+            [cfi_name] => Mo Alkhafaji
+            [cfi_phone] => (414) 418-0515
+            [classmates] => Jon Watts
+        )
+
+)
+Array
+(
+    [to] => jonwatts0101@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-27 11:00
+            [end] => 2026-02-27 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Jon Watts
+            [student_phone] => (314) 556-4371
+            [tail_number] => N/A
+            [cfi_name] => Jack Tapia
+            [cfi_phone] => (636) 980-6268
+            [classmates] => Jon Watts
+        )
+
+)
+Array
+(
+    [to] => draketp12345@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-27 11:00
+            [end] => 2026-02-27 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Drake Polacek
+            [student_phone] => (618) 803-8023
+            [tail_number] => N/A
+            [cfi_name] => Jack Norrenberns
+            [cfi_phone] => (618) 606-4041
+            [classmates] => Drake Polacek
+        )
+
+)
+Array
+(
+    [to] => draketp12345@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-27 11:00
+            [end] => 2026-02-27 13:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Drake Polacek
+            [student_phone] => (618) 803-8023
+            [tail_number] => N/A
+            [cfi_name] => Jack Tapia
+            [cfi_phone] => (636) 980-6268
+            [classmates] => Drake Polacek
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-06 13:00
+            [end] => 2026-02-06 15:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-09 10:00
+            [end] => 2026-02-09 12:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Logan Wilhite
+        )
+
+)
+Array
+(
+    [to] => eagleno49@aol.com
+    [payload] => Array
+        (
+            [start] => 2026-02-11 18:00
+            [end] => 2026-02-11 20:00:00
+            [flight_type] => Ground Lesson
+            [student_name] => Brain Johnston
+            [student_phone] => (314) 623-3736
+            [tail_number] => N/A
+            [cfi_name] => Daniel Gill
+            [cfi_phone] => (636) 288-1490
+            [classmates] => Brain Johnston
+        )
+
+)
+Array
+(
+    [to] => loganwilhite12@gmail.com
+    [payload] => Array
+        (
+            [start] => 2026-02-10 13:00
+            [end] => 2026-02-10 14:30:00
+            [flight_type] => Ground Lesson
+            [student_name] => Logan Wilhite
+            [student_phone] => (314) 495-1889
+            [tail_number] => N/A
+            [cfi_name] => Samy-Rae Brain
+            [cfi_phone] => (805) 433-2354
+            [classmates] => Logan Wilhite
+        )
+
+)

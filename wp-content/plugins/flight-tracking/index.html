@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Piston Flight Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body {
+      background: #111;
+      color: #fff;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Piston Flight Tracking</h1>
+  <p>Initiating check-in/check-out...</p>
+
+  <script src="/wp-content/plugins/flight-tracking/flight-tracking.js"></script>
+  <script>
+    function isIOSChrome() {
+      return /CriOS/.test(navigator.userAgent) && /iPhone|iPad|iPod/.test(navigator.userAgent);
+    }
+
+    function autoLaunchFlow() {
+      const active = JSON.parse(localStorage.getItem("activeFlight") || "{}");
+      if (active && active.tail_number && !active.checked_in) {
+        launchCheckinFlow(active);
+      } else {
+        startFlightTracking();
+      }
+    }
+
+    function continueCookieCheck() {
+      if (localStorage.getItem("cookieAccepted") !== "true") {
+        Swal.fire({
+          title: "🍪 We Use Cookies",
+          html: "We use cookies to remember your aircraft check-out and streamline your experience.",
+          confirmButtonText: "Got it!",
+          allowOutsideClick: false,
+          allowEscapeKey: false
+        }).then(() => {
+          localStorage.setItem("cookieAccepted", "true");
+          autoLaunchFlow();
+        });
+      } else {
+        autoLaunchFlow();
+      }
+    }
+
+    window.onload = function () {
+      if (isIOSChrome()) {
+        Swal.fire({
+          icon: 'info',
+          title: '📸 Safari Recommended on iPhone',
+          html: `
+            For the best selfie experience, please use Safari instead of Chrome.<br>
+            Camera features work best in Safari on iPhone.`,
+          confirmButtonText: 'Continue Anyway',
+          allowOutsideClick: false
+        }).then(() => {
+          continueCookieCheck();
+        });
+      } else {
+        continueCookieCheck();
+      }
+    };
+  </script>
+</body>
+</html>

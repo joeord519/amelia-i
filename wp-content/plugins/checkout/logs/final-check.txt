@@ -1,0 +1,2 @@
+[2025-05-11 02:36:36] about to start mailer
+[2025-05-11 02:36:38] finished sending to 1

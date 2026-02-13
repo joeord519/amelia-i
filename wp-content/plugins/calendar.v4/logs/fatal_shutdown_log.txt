@@ -1,0 +1,90 @@
+💥 FATAL ERROR: Array
+(
+    [type] => 1
+    [message] => Uncaught Error: Call to undefined function sendGroundLessonEmail() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php:113
+Stack trace:
+#0 {main}
+  thrown
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php
+    [line] => 113
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 2
+    [message] => Undefined variable $classmates
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/send_ground_email.php
+    [line] => 29
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 2
+    [message] => Undefined variable $classmates
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/send_ground_email.php
+    [line] => 29
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 2
+    [message] => Undefined variable $classmates
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/send_ground_email.php
+    [line] => 29
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 2
+    [message] => Undefined variable $startTime
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php
+    [line] => 117
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 1
+    [message] => Uncaught Error: Call to undefined function sendGroundLessonEmail() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php:113
+Stack trace:
+#0 {main}
+  thrown
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php
+    [line] => 113
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 1
+    [message] => Uncaught Error: Call to undefined function sendGroundLessonEmail() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/send_ground_email.php:115
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php(22): require_once()
+#1 {main}
+  thrown
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/send_ground_email.php
+    [line] => 115
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 1
+    [message] => Uncaught Error: Call to undefined function sendGroundLessonEmail() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/send_ground_email.php:115
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php(22): require_once()
+#1 {main}
+  thrown
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/send_ground_email.php
+    [line] => 115
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 1
+    [message] => Uncaught Error: Call to undefined function sendGroundLessonEmail() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php:115
+Stack trace:
+#0 {main}
+  thrown
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php
+    [line] => 115
+)
+💥 FATAL ERROR: Array
+(
+    [type] => 1
+    [message] => Uncaught Error: Call to undefined function sendGroundLessonEmail() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php:115
+Stack trace:
+#0 {main}
+  thrown
+    [file] => /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v4/create_ground_lesson.php
+    [line] => 115
+)

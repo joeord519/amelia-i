@@ -1,0 +1,38 @@
+[17-Mar-2025 02:01:12 UTC] PHP Warning:  Undefined variable $pdo in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/fetch_financing_options.php on line 8
+[17-Mar-2025 02:01:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/fetch_financing_options.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/fetch_financing_options.php on line 8
+[17-Mar-2025 02:25:23 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 3
+[17-Mar-2025 02:25:23 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 3
+[17-Mar-2025 02:28:55 UTC] PHP Warning:  require_once(vendor/autoload.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 6
+[17-Mar-2025 02:28:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 6
+[17-Mar-2025 02:40:55 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/tcpdf/tcpdf.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 6
+[17-Mar-2025 02:40:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/tcpdf/tcpdf.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 6
+[17-Mar-2025 03:15:00 UTC] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 19
+[17-Mar-2025 03:15:02 UTC] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 19
+[17-Mar-2025 03:15:04 UTC] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, null given in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 19
+[17-Mar-2025 03:30:15 UTC] PHP Warning:  fopen(file:///home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/pdfs/67d79747bf582_financing_summary.pdf): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/tcpdf/include/tcpdf_static.php on line 1839
+[17-Mar-2025 05:06:56 UTC] PHP Warning:  fopen(file:///home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/pdfs/pdfs/67d7adf035eae_financing_summary.pdf): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/tcpdf/include/tcpdf_static.php on line 1839
+[17-Mar-2025 05:40:50 UTC] PHP Parse error:  syntax error, unexpected token ".=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 77
+[17-Mar-2025 05:51:12 UTC] PHP Parse error:  syntax error, unexpected token ".=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 95
+[17-Mar-2025 05:52:30 UTC] PHP Parse error:  syntax error, unexpected token ".=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/generate_pdf.php on line 95
+[17-Mar-2025 06:00:55 UTC] PHP Warning:  fopen(file:///home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/pdfs/pdfs/67d7ba9772004_financing_summary.pdf): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/custom-payment-plans/tcpdf/include/tcpdf_static.php on line 1839

@@ -1,0 +1,280 @@
+[06-Aug-2025 23:44:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[06-Aug-2025 23:45:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[07-Aug-2025 00:45:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[07-Aug-2025 04:46:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[07-Aug-2025 18:44:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[08-Aug-2025 18:28:50 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 01:46:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 01:46:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 02:45:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 04:12:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 04:13:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 05:13:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 06:44:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 09:09:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 18:08:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 20:40:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[09-Aug-2025 22:58:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[10-Aug-2025 20:32:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[10-Aug-2025 23:02:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[11-Aug-2025 20:41:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[11-Aug-2025 23:27:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[10-Sep-2025 03:05:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[10-Sep-2025 03:05:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[10-Sep-2025 04:04:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[10-Sep-2025 08:01:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[10-Sep-2025 21:59:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[11-Sep-2025 21:34:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[12-Sep-2025 21:34:11 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 00:02:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 00:02:43 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 00:14:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 01:01:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 01:14:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 03:12:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 05:05:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 05:12:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 19:16:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[18-Nov-2025 21:11:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[19-Nov-2025 19:07:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[19-Nov-2025 21:07:18 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[20-Nov-2025 19:15:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[20-Nov-2025 21:08:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[22-Nov-2025 17:01:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[22-Nov-2025 17:01:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[22-Nov-2025 17:15:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[22-Nov-2025 18:01:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[22-Nov-2025 18:15:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[22-Nov-2025 20:17:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[22-Nov-2025 22:01:47 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[22-Nov-2025 22:18:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[23-Nov-2025 12:07:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[23-Nov-2025 13:59:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[24-Nov-2025 11:58:04 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[24-Nov-2025 14:09:35 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[25-Nov-2025 11:29:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4
+[25-Nov-2025 13:50:44 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/lib/stripe/init.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php:4
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/stripe_webhook.php(4): require_once()
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/accelerated/config.php on line 4

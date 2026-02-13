@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="booking-container">
+        <h2>📅 Select a Date</h2>
+        <input type="date" id="datePicker" min="2025-03-04" max="2025-04-04">
+
+        <div id="timeSlotsContainer" style="display:none;">
+            <h2>⏰ Select a Time Slot</h2>
+            <div id="timeSlots"></div>
+            <div id="navigationButtons">
+                <button id="prevDay">◀️ Previous Day</button>
+                <button id="nextDay">Next Day ▶️</button>
+            </div>
+        </div>
+
+        <div id="confirmContainer" style="display:none;">
+            <h2>✅ Confirm Booking</h2>
+            <p id="selectedDetails"></p>
+            <button id="confirmBooking">Confirm Booking</button>
+        </div>
+    </div>
+
+    <script>
+        let selectedDate = sessionStorage.getItem("selected_date") || "";  
+        let selectedTime = sessionStorage.getItem("selected_time") || "";
+
+        // ✅ Load session data at the start
+        (function loadSessionData() {
+            let requiredFields = ["student_id", "student_name", "selected_aircraft", "selected_lesson", "selected_airport"];
+
+            requiredFields.forEach(field => {
+                let storedValue = sessionStorage.getItem(field);
+
+                if (!storedValue || storedValue === "undefined" || storedValue === "null" || storedValue === "TEMP_ID") {
+                    console.warn(`⚠️ Missing session data: ${field}`);
+
+                    // ✅ If student_id is missing, try to reload it from LocalStorage
+                    if (field === "student_id") {
+                        let verifiedStudentId = localStorage.getItem("verified_student_id");
+                        if (verifiedStudentId) {
+                            sessionStorage.setItem("student_id", verifiedStudentId);
+                            console.log(`✅ Reloaded Student ID from LocalStorage: ${verifiedStudentId}`);
+                        } else {
+                            console.error("❌ Student ID still missing. Cannot proceed.");
+                        }
+                    }
+
+                    // ✅ Handle missing airport
+                    if (field === "selected_airport") {
+                        sessionStorage.setItem("selected_airport", "Unknown Airport");
+                        console.log("✅ Defaulting airport to 'Unknown Airport'");
+                    }
+                }
+            });
+
+            // ✅ Log updated session storage
+            console.log("✅ Final Session Data Loaded:", {
+                student_id: sessionStorage.getItem("student_id"),
+                student_name: sessionStorage.getItem("student_name"),
+                aircraft: sessionStorage.getItem("selected_aircraft"),
+                lesson: sessionStorage.getItem("selected_lesson"),
+                selected_airport: sessionStorage.getItem("selected_airport"),
+                selected_date: sessionStorage.getItem("selected_date"),
+                selected_time: sessionStorage.getItem("selected_time")
+            });
+
+            // 🚨 Show error if `student_id` is still missing after all recovery attempts
+            if (!sessionStorage.getItem("student_id") || sessionStorage.getItem("student_id") === "TEMP_ID") {
+                Swal.fire("Error", "Some required session data is missing. Please restart booking.", "error");
+            }
+
+        })();
+
+        // ✅ If a date was previously selected, restore it
+        if (selectedDate) {
+            $("#datePicker").val(selectedDate);
+            fetchTimeSlots(selectedDate);
+        }
+
+        // ✅ Preserve selected date in sessionStorage
+        $("#datePicker").on("change", function () {
+            selectedDate = $(this).val();
+            sessionStorage.setItem("selected_date", selectedDate);
+
+            console.log("📅 Selected Date:", selectedDate);
+            fetchTimeSlots(selectedDate);
+        });
+
+        function fetchTimeSlots(date) {
+            $.get(`fetch_timeslots.php?date=${date}`, function (data) {
+                console.log("✅ Raw API Response:", data);
+
+                try {
+                    let slots = typeof data === "string" ? JSON.parse(data) : data;
+                    console.log("✅ Parsed Slots:", slots);
+
+                    $("#timeSlots").empty();
+
+                    if (!slots || !Array.isArray(slots) || slots.length === 0) {
+                        $("#timeSlots").append("<p>No available slots for this date.</p>");
+                    } else {
+                        slots.forEach(slot => {
+                            let formattedTime = new Date(slot.start_time).toLocaleTimeString('en-US', { 
+                                hour: '2-digit', minute: '2-digit', hour12: true 
+                            });
+
+                            let btn = `<button class='timeSlotBtn' data-time='${slot.start_time}'>${formattedTime}</button>`;
+                            $("#timeSlots").append(btn);
+                        });
+
+                        console.log("✅ Time slots successfully appended to UI.");
+                    }
+
+                    $("#timeSlotsContainer").show();
+                } catch (error) {
+                    console.error("JSON Parsing Error:", error, "Received data:", data);
+                    Swal.fire("Error", "Invalid response from the server. Check console logs for details.", "error");
+                }
+            }).fail(function () {
+                console.error("Error fetching time slots.");
+                Swal.fire("Error", "Failed to load time slots. Please try again.", "error");
+            });
+        }
+
+        // ✅ Preserve selected time slot in sessionStorage
+        $(document).on("click", ".timeSlotBtn", function () {
+            $(".timeSlotBtn").removeClass("selected");
+            $(this).addClass("selected");
+
+            selectedTime = $(this).data("time");
+            sessionStorage.setItem("selected_time", selectedTime);
+
+            console.log("⏰ Selected Time:", selectedTime);
+            showBookingConfirmation();
+        });
+
+        function showBookingConfirmation() {
+            let studentId = sessionStorage.getItem("student_id") || "Unknown";
+            let studentName = sessionStorage.getItem("student_name");
+            if (!studentName || studentName === "null") {
+                studentName = "⚠️ Not Found - Check Selection";
+            }
+
+            let aircraftId = sessionStorage.getItem("selected_aircraft") || "Unknown";
+            let cfiId = sessionStorage.getItem("selected_cfi") || "N/A";
+            let eventType = sessionStorage.getItem("selected_lesson") || "Unknown";
+
+            Swal.fire({
+                title: "Confirm Your Flight Booking",
+                html: `
+                    <strong>📅 Date:</strong> ${selectedDate} <br>
+                    <strong>⏰ Time:</strong> ${selectedTime} <br>
+                    <strong>👤 Student / Renter:</strong> ${studentName} <br>
+                    <strong>🛩 Aircraft:</strong> ${aircraftId} <br>
+                    <strong>👨‍✈️ CFI:</strong> ${cfiId} <br>
+                    <strong>📍 Airport:</strong> ${sessionStorage.getItem("selected_airport") || "Unknown"} <br>
+                    <strong>🏆 Lesson Type:</strong> ${eventType} <br>
+                `,
+                icon: "info",
+                showCancelButton: true,
+                confirmButtonText: "Confirm Booking ✅",
+                cancelButtonText: "Cancel ❌",
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    submitBooking(studentId, aircraftId, cfiId, eventType, selectedDate, selectedTime);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

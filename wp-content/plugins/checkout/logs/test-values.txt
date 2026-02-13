@@ -1,0 +1,18 @@
+Array
+(
+    [subject] => FLIGHT HOURS! - Only 4 Days Left to BULK UP!
+    [body] => 
+    [sendMode] => live
+)
+Array
+(
+    [subject] => FLIGHT HOURS! - Only 4 Days Left to BULK UP!
+    [body] => 
+    [sendMode] => live
+)
+Array
+(
+    [subject] => FLIGHT HOURS! - Only 4 Days Left to BULK UP!
+    [body] => 
+    [sendMode] => live
+)

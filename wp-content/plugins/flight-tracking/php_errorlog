@@ -1,0 +1,76 @@
+[12-Apr-2025 02:26:06 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 35
+[12-Apr-2025 02:26:29 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 35
+[12-Apr-2025 02:29:37 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 35
+[12-Apr-2025 02:29:46 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 35
+[12-Apr-2025 02:30:02 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 35
+[12-Apr-2025 02:30:24 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 35
+[12-Apr-2025 02:30:43 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 35
+[12-Apr-2025 02:31:46 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 2
+[12-Apr-2025 02:32:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 2
+[12-Apr-2025 02:32:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 2
+[12-Apr-2025 02:32:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 2
+[12-Apr-2025 02:34:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 2
+[13-Apr-2025 00:24:39 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/verify_student.php on line 7
+[13-Apr-2025 16:17:28 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 16:21:00 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 16:26:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 16:26:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 16:28:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 16:33:12 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 16:33:51 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 16:47:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 17:51:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 17:54:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 18:00:14 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3
+[13-Apr-2025 18:07:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'vendor/autoload.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-tracking/facial_match.php on line 3

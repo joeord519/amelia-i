@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Calendar V2 - Piston Aviation</title>
+
+  <!-- FullCalendar Scheduler CSS + JS -->
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.js"></script>
+
+  <!-- SweetAlert2 for modal UI -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- jQuery (optional but present in your setup) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9fafb; margin: 0; }
+    h1 { text-align: center; font-size: 2rem; background: #1f2937; color: #facc15; padding: 10px; margin: 0; }
+    #calendar { margin: 20px; }
+    #adminPanelBtn {
+      position: fixed; top: 20px; left: 20px; background: #111827; color: white;
+      padding: 10px 20px; border-radius: 8px; text-decoration: none; z-index: 9999;
+    }
+    #adminPanelBtn:hover { background: #374151; }
+  </style>
+</head>
+<body>
+  <h1>Admin Calendar V2 - Piston Aviation</h1>
+  <a href="../checkout/admin-panel.php" id="adminPanelBtn">🏠 Admin Panel</a>
+  <div id="calendar"></div>
+
+  <!-- Load rebuilt admin logic -->
+  <script src="admin-v2.js?v=1"></script>
+
+  <!-- Ensure the calendar initializes once the DOM is ready -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (typeof loadAdminCalendar === "function") {
+        loadAdminCalendar();
+      } else {
+        console.error("🚨 loadAdminCalendar is not defined. Check admin-v2.js load order.");
+      }
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>🧪 FullCalendar Testbed</title>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.js"></script>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+    h1 { text-align: center; }
+    #calendar { max-width: 1200px; margin: 40px auto; background: white; padding: 10px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>🧪 FullCalendar Drag & Drop Test</h1>
+  <div id="calendar"></div>
+
+  <script>
+    const testResources = [
+      { id: "CFI-1", title: "CFI One", extendedProps: { group: "CFI" } },
+      { id: "CFI-2", title: "CFI Two", extendedProps: { group: "CFI" } },
+      { id: "AC-A", title: "Plane A", extendedProps: { group: "Aircraft" } },
+      { id: "AC-B", title: "Plane B", extendedProps: { group: "Aircraft" } }
+    ];
+
+    const testEvents = [
+      {
+        id: "evt-1-CFI",
+        resourceIds: ["CFI-1"],
+        title: "Flight → Bob",
+        start: "2025-05-20T10:00:00",
+        end: "2025-05-20T12:00:00",
+        backgroundColor: "#60a5fa",
+        extendedProps: {
+          type: "CFI",
+          paired_event_id: "evt-1-AC",
+          resourceId: "CFI-1"
+        }
+      },
+      {
+        id: "evt-1-AC",
+        resourceIds: ["AC-A"],
+        title: "✈ Aircraft: AC-A",
+        start: "2025-05-20T10:00:00",
+        end: "2025-05-20T12:00:00",
+        backgroundColor: "#93c5fd",
+        extendedProps: {
+          type: "Aircraft",
+          paired_event_id: "evt-1-CFI",
+          resourceId: "AC-A"
+        }
+      }
+    ];
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const calendar = new FullCalendar.Calendar(document.getElementById("calendar"), {
+        schedulerLicenseKey: "GPL-My-Project-Is-Open-Source",
+        initialView: "resourceTimelineDay",
+        editable: true,
+        eventResourceEditable: true,
+        aspectRatio: 1.8,
+        slotMinTime: "06:00:00",
+        slotMaxTime: "22:00:00",
+        nowIndicator: true,
+        resourceAreaHeaderContent: "CFIs & Aircraft",
+        resources: testResources,
+        events: testEvents,
+        eventAllow: function (dropInfo, draggedEvent) {
+          const type = draggedEvent.extendedProps?.type;
+          const fromId = draggedEvent.getResources?.()[0]?.id;
+          const toId = dropInfo.resource.id;
+          const group = dropInfo.resource.extendedProps?.group;
+
+          console.log("💡 Checking drop:", { type, fromId, toId, group });
+          return group === "CFI" || group === "Aircraft";
+        },
+        eventDrop: function (info) {
+          console.log("🚀 Dropped event:", info.event.id);
+          const ep = info.event.extendedProps;
+          const paired = calendar.getEventById(ep.paired_event_id);
+          if (paired) {
+            paired.setStart(info.event.start);
+            paired.setEnd(info.event.end);
+            console.log("🔗 Synced paired event:", ep.paired_event_id);
+          } else {
+            console.warn("❌ Paired event not found");
+          }
+        }
+      });
+
+      calendar.render();
+    });
+  </script>
+</body>
+</html>
+
+

@@ -1,0 +1,8 @@
+[27-Aug-2025 01:02:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/wp-load.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/spinner/api/eligibility.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/spinner/api/eligibility.php on line 3
+[27-Aug-2025 01:03:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/wp-load.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/spinner/api/eligibility.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/spinner/api/eligibility.php on line 3

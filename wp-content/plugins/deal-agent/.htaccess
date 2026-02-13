@@ -1,0 +1,3 @@
+<Files "openai-config.php">
+  Require all denied
+</Files>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Connect Google Calendar</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 60px;
+    }
+    button {
+      font-size: 1.2rem;
+      padding: 12px 24px;
+      background: #4285F4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    h1 {
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+  <h1>Connect Your Google Calendar</h1>
+  <p>This will allow Piston Aviation to sync flights directly with your calendar.</p>
+  <button id="connectBtn">🔗 Connect with Google</button>
+
+  <script>
+    document.getElementById("connectBtn").onclick = () => {
+      const cfiId = new URLSearchParams(window.location.search).get("cfi_id");
+      if (!cfiId) {
+        alert("Missing CFI ID. Please use a valid connection link.");
+        return;
+      }
+
+      const clientId = "179521123899-pa69m35lqmhi8usqvcgg0m2eeopjkj9m.apps.googleusercontent.com";
+      const redirectUri = "https://amelia-i.com/wp-content/plugins/calendar/appointment-booking/handle_oauth_callback.php";
+
+      const scope = encodeURIComponent("https://www.googleapis.com/auth/calendar");
+      const url = `https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=${clientId}&redirect_uri=${encodeURIComponent(redirectUri)}&scope=${scope}&access_type=offline&prompt=consent&state=${cfiId}`;
+
+      window.location.href = url;
+    };
+  </script>
+</body>
+</html>
+

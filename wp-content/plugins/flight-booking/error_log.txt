@@ -1,0 +1,24 @@
+[28-Feb-2025 06:23:57 UTC] ❌ Invalid date format: 02/28/2025 06:30
+[28-Feb-2025 06:28:04 UTC] 🟢 Ready to insert: aircraft=N374EA, cfi=00005, student_id=8, start=2025-02-28 08:00:00, end=2025-02-28 10:00:00, flight_type=dual_training
+[28-Feb-2025 06:28:04 UTC] ✅ Booking successfully added to database!
+[28-Feb-2025 06:31:56 UTC] 🟢 Ready to insert: aircraft=N1630J, cfi=00007, student_id=8, start=2025-02-28 08:00:00, end=2025-02-28 12:00:00, flight_type=dual_cross_country
+[28-Feb-2025 06:31:56 UTC] ✅ Booking successfully added to database!
+[28-Feb-2025 08:38:35 UTC] ❌ Invalid datetime format: 2025-03-02 07:00
+[28-Feb-2025 08:48:10 UTC] 🟢 Ready to insert: aircraft=N1847J, cfi=00002, student_id=8, start=2025-03-02 10:00:00, end=2025-03-02 12:00:00, flight_type=dual_training
+[28-Feb-2025 08:48:10 UTC] ✅ Booking successfully added to database!
+[28-Feb-2025 08:50:22 UTC] 🟢 Ready to insert: aircraft=N1630J, cfi=00006, student_id=8, start=2025-03-03 09:00:00, end=2025-03-03 13:00:00, flight_type=dual_cross_country
+[28-Feb-2025 08:50:22 UTC] ✅ Booking successfully added to database!
+[28-Feb-2025 08:52:29 UTC] 🟢 Ready to insert: aircraft=N1630J, cfi=00008, student_id=8, start=2025-03-03 13:00:00, end=2025-03-03 15:00:00, flight_type=dual_training
+[28-Feb-2025 08:52:29 UTC] ✅ Booking successfully added to database!
+[28-Feb-2025 09:05:54 UTC] 🟢 Ready to insert: aircraft=N1630J, cfi=00009, student_id=8, start=2025-03-03 10:00:00, end=2025-03-03 14:00:00, flight_type=dual_cross_country
+[28-Feb-2025 09:05:54 UTC] ✅ Booking successfully added to database!
+[28-Feb-2025 09:12:38 UTC] 🟢 Ready to insert: aircraft=N1630J, cfi=00008, student_id=8, start=2025-03-03 10:00:00, end=2025-03-03 12:00:00, flight_type=dual_training
+[28-Feb-2025 09:12:38 UTC] ✅ Booking successfully added to database!
+[28-Feb-2025 09:28:14 UTC] 🟢 Ready to insert: aircraft=N1630J, cfi=00009, student_id=8, start=2025-03-03 08:00:00, end=2025-03-03 10:00:00, flight_type=dual_training
+[28-Feb-2025 09:28:14 UTC] ✅ Booking successfully added to database!
+[28-Feb-2025 09:29:15 UTC] 🟢 Ready to insert: aircraft=N1630J, cfi=00007, student_id=8, start=2025-03-03 08:30:00, end=2025-03-03 12:30:00, flight_type=dual_cross_country
+[28-Feb-2025 09:29:15 UTC] ✅ Booking successfully added to database!
+[01-Mar-2025 01:40:13 UTC] 🟢 Ready to insert: aircraft=N1847J, cfi=00002, student_id=8, start=2025-03-03 08:00:00, end=2025-03-03 10:00:00, flight_type=dual_training
+[01-Mar-2025 01:40:13 UTC] ✅ Booking successfully added to database!
+[01-Mar-2025 01:42:18 UTC] 🟢 Ready to insert: aircraft=N7970F, cfi=00013, student_id=8, start=2025-03-09 10:00:00, end=2025-03-09 12:00:00, flight_type=dual_training
+[01-Mar-2025 01:42:18 UTC] ✅ Booking successfully added to database!

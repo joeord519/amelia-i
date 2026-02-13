@@ -1,0 +1,36 @@
+[22-Feb-2025 04:32:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'db_connect.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking/flight_booking_form.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking/flight_booking_form.php on line 5
+[26-Feb-2025 08:12:33 UTC] ✅ AJAX Request received for fetch_timeslots
+[26-Feb-2025 08:21:18 UTC] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking/fetch_timeslots.php on line 13
+[26-Feb-2025 08:23:13 UTC] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking/fetch_timeslots.php on line 13
+[26-Feb-2025 08:27:03 UTC] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking/fetch_timeslots.php on line 13
+[26-Feb-2025 08:31:02 UTC] PHP Parse error:  syntax error, unexpected token "else", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking/fetch_timeslots.php on line 13
+[26-Feb-2025 09:12:19 UTC] ✅ AJAX Request received for fetch_timeslots
+[26-Feb-2025 09:28:10 UTC] ✅ Fetching Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 09:31:27 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 09:46:15 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 09:46:40 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 09:46:47 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 14:41:37 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 18:09:18 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 22:46:04 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 22:55:46 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 23:43:11 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[26-Feb-2025 23:43:31 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[27-Feb-2025 04:49:17 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[27-Feb-2025 04:49:22 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[27-Feb-2025 05:06:31 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[27-Feb-2025 05:26:28 UTC] ✅ Fetching Available Time Slots - Date: , Aircraft: , CFI: , Flight Type: 
+[28-Feb-2025 03:33:30 UTC] PHP Parse error:  syntax error, unexpected token "=" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking/flight_booking_form.php on line 30
+[28-Feb-2025 08:38:35 UTC] 🚀 process_booking.php has started executing at 2025-02-28 08:38:35
+[28-Feb-2025 08:48:10 UTC] 🚀 process_booking.php has started executing at 2025-02-28 08:48:10
+[28-Feb-2025 08:50:22 UTC] 🚀 process_booking.php has started executing at 2025-02-28 08:50:22
+[28-Feb-2025 08:52:29 UTC] 🚀 process_booking.php has started executing at 2025-02-28 08:52:29
+[28-Feb-2025 09:05:54 UTC] 🚀 process_booking.php has started executing at 2025-02-28 09:05:54
+[28-Feb-2025 09:12:38 UTC] 🚀 process_booking.php has started executing at 2025-02-28 09:12:38
+[28-Feb-2025 09:28:14 UTC] 🚀 process_booking.php has started executing at 2025-02-28 09:28:14
+[28-Feb-2025 09:29:15 UTC] 🚀 process_booking.php has started executing at 2025-02-28 09:29:15
+[01-Mar-2025 01:40:13 UTC] 🚀 process_booking.php has started executing at 2025-03-01 01:40:13
+[01-Mar-2025 01:42:18 UTC] 🚀 process_booking.php has started executing at 2025-03-01 01:42:18

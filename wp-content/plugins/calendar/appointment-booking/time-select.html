@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Your Flight Time</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .calendar-panel, .times-panel {
+      flex: 1;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .times-panel h2 {
+      margin-bottom: 10px;
+    }
+
+    .timeslots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .slot-button {
+      padding: 10px 18px;
+      background: #4f46e5;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .slot-button:hover {
+      background: #3730a3;
+    }
+
+    .no-slots {
+      color: #999;
+      font-style: italic;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center; font-size: 2rem; margin-bottom: 30px;">Select Your Flight Time</h1>
+
+  <div class="container">
+    <div class="calendar-panel">
+      <label for="datePicker"><strong>Choose a Date</strong></label>
+      <div id="datePicker"></div>
+    </div>
+
+    <div class="times-panel">
+      <h2>Available Times</h2>
+      <div id="timeslots" class="timeslots">
+        <p class="no-slots">Please select a date to see available times.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script>
+    const queryParams = new URLSearchParams(window.location.search);
+    const aircraftId = queryParams.get("aircraft");
+    const cfiId = queryParams.get("cfi") || '';
+
+    flatpickr("#datePicker", {
+  inline: true,                      // 👈 this makes the calendar always visible
+  dateFormat: "Y-m-d",
+  minDate: "today",
+  maxDate: new Date().fp_incr(30),  // limit to 30 days from now
+  defaultDate: "today",
+  onChange: function(selectedDates, dateStr) {
+    if (dateStr) loadTimeSlots(dateStr);
+  }
+});
+
+
+
+    function loadTimeSlots(dateStr) {
+      const url = `fetch_available_times.php?date=${dateStr}&aircraft=${aircraftId}&cfi=${cfiId}`;
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          const container = document.getElementById("timeslots");
+          container.innerHTML = "";
+
+          if (data.length === 0) {
+            container.innerHTML = `<p class="no-slots">No available slots for that date.</p>`;
+            return;
+          }
+
+          data.forEach(time => {
+            const btn = document.createElement("button");
+            btn.className = "slot-button";
+            btn.innerText = time;
+            btn.onclick = () => confirmTimeSelection(dateStr, time);
+            container.appendChild(btn);
+          });
+        });
+    }
+
+    function confirmTimeSelection(date, time) {
+  const studentPhone = queryParams.get("phone");
+  const flightTypeId = queryParams.get("flight_type_id");
+
+  if (!studentPhone || !aircraftId || !flightTypeId || !date || !time) {
+    alert("Missing required information.");
+    return;
+  }
+
+  const payload = new FormData();
+  payload.append("student_phone", studentPhone);
+  payload.append("aircraft_id", aircraftId);
+  payload.append("cfi_id", cfiId);
+  payload.append("flight_type_id", flightTypeId);
+  payload.append("date", date);
+  payload.append("start_time", time);
+
+  fetch("book_flight.php", {
+    method: "POST",
+    body: payload
+  })
+  .then(res => res.json())
+  .then(result => {
+    if (result.success) {
+      Swal.fire({
+        icon: "success",
+        title: "Flight Booked!",
+        text: "Your appointment has been saved.",
+        confirmButtonText: "Back to Start"
+      }).then(() => {
+        window.location.href = "index.html";
+      });
+    } else {
+      Swal.fire("Oops", result.message || "Could not book flight.", "error");
+    }
+  });
+}
+
+  </script>
+</body>
+</html>

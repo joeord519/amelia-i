@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Lesson Booking</title>
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/flight.css">
+</head>
+<body>
+    <div class="booking-container">
+        <h2>Flight Selections</h2>
+
+        <!-- Flight Type Selection (Locked to Flight Lesson) -->
+        <p><strong>Flight Type:</strong> Flight Lesson</p>
+
+        <!-- Location Selection -->
+        <p><strong>Current Location:</strong> <span id="selected-location">Loading...</span></p>
+        <button id="change-location-btn" class="btn">Change Location</button>
+        <div id="location-dropdown" style="display: none;">
+            <select id="swal-location" class="input-field"></select>
+            <button id="confirm-location-btn" class="btn">Confirm Airfield</button>
+        </div>
+
+        <!-- Lesson Type Selection -->
+        <label for="lesson-type">Choose Lesson Type:</label>
+        <select id="lesson-type" class="input-field">
+            <option value="" disabled selected>Select Lesson Type</option>
+            <option value="Dual Training">Dual Training</option>
+            <option value="Dual Cross Country">Dual Cross Country</option>
+            <option value="Solo Flight - Local">Solo Flight - Local</option>
+            <option value="Solo Flight - Cross Country">Solo Flight - Cross Country</option>
+        </select>
+
+        <!-- Aircraft Selection -->
+        <label>Choose Your Aircraft:</label>
+        <p id="aircraft-display" style="font-weight: bold; display: none;"></p>
+        <select id="swal-aircraft" class="input-field">
+            <option value="" disabled selected>Select Aircraft</option>
+        </select>
+        <button id="confirm-aircraft-btn" class="btn">Confirm Aircraft</button>
+        <button id="change-aircraft-btn" class="btn" style="display: none;">Change Aircraft</button>
+
+        <!-- CFI Selection -->
+        <div id="cfi-selection">
+            <label>Your CFI:</label>
+            <p id="assigned-cfi">None</p>
+            <button id="change-cfi-btn" class="btn">Change CFI</button>
+            <select id="swal-cfi" class="input-field" style="display: none;"></select>
+        </div>
+
+        <!-- Confirm Selection Button -->
+        <button id="confirm-selections-btn" class="btn" style="display: none;">Pick Your Flight Time</button>
+    </div>
+
+    <script src="../assets/js/global.js"></script>
+    <script src="../assets/js/flight.js"></script>
+</body>
+</html>

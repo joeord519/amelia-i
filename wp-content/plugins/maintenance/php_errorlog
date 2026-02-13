@@ -1,0 +1,42 @@
+[14-Jun-2025 04:43:33 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/db_connect.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 4
+[14-Jun-2025 04:43:33 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/db_connect.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 4
+[14-Jun-2025 05:09:27 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/db_connect.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 4
+[14-Jun-2025 05:09:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/db_connect.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php:4
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 4
+[14-Jun-2025 05:30:37 UTC] PHP Warning:  Undefined variable $db in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 171
+[14-Jun-2025 05:30:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php:171
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 171
+[14-Jun-2025 05:33:51 UTC] PHP Warning:  Undefined variable $db in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 201
+[14-Jun-2025 05:33:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php:201
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 201
+[14-Jun-2025 06:20:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'interval_hours' cannot be null in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/add_maintenance_event.php:31
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/add_maintenance_event.php(31): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/add_maintenance_event.php on line 31
+[14-Jun-2025 06:32:40 UTC] RAW POST: {"tail_number":"N1630J","event_type":"Annual","tracking_type":"DATE","interval_hours":"","last_performed_tach":"","last_performed_date":"2025-06-01","interval_days":"365","notes":"ttt"}
+[14-Jun-2025 06:32:40 UTC] INSERT DATA: ["N1630J","Annual","DATE",null,null,365,"2025-06-01","ttt"]
+[14-Jun-2025 06:33:45 UTC] RAW POST: {"tail_number":"N1630J","event_type":"Annual","tracking_type":"DATE","interval_hours":"","last_performed_tach":"","last_performed_date":"2025-06-02","interval_days":"360","notes":"faf"}
+[14-Jun-2025 06:33:45 UTC] INSERT DATA: ["N1630J","Annual","DATE",null,null,360,"2025-06-02","faf"]
+[14-Jun-2025 06:37:05 UTC] RAW POST: {"tail_number":"N1630J","event_type":"Annual","tracking_type":"DATE","interval_hours":"","last_performed_tach":"","last_performed_date":"2025-06-01","interval_days":"365","notes":"test"}
+[14-Jun-2025 06:37:05 UTC] INSERT DATA: ["N1630J","Annual","DATE",0,0,365,"2025-06-01","test"]
+[14-Jun-2025 06:46:36 UTC] PHP Parse error:  syntax error, unexpected token "&" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 15
+[14-Jun-2025 06:46:52 UTC] PHP Parse error:  syntax error, unexpected token "&" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 15
+[14-Jun-2025 06:46:53 UTC] PHP Parse error:  syntax error, unexpected token "&" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 15
+[14-Jun-2025 06:46:54 UTC] PHP Parse error:  syntax error, unexpected token "&" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 15
+[14-Jun-2025 06:46:54 UTC] PHP Parse error:  syntax error, unexpected token "&" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 15
+[14-Jun-2025 06:47:23 UTC] PHP Parse error:  syntax error, unexpected token "&" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 15
+[14-Jun-2025 06:47:27 UTC] PHP Parse error:  syntax error, unexpected token "&" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 15
+[14-Jun-2025 06:49:47 UTC] PHP Parse error:  syntax error, unexpected double-quoted string " tail_number']}'=", expecting "," or ";" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 197
+[14-Jun-2025 06:52:15 UTC] PHP Parse error:  syntax error, unexpected token ";" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 257
+[14-Jun-2025 06:52:16 UTC] PHP Parse error:  syntax error, unexpected token ";" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 257
+[14-Jun-2025 15:59:16 UTC] PHP Parse error:  syntax error, unexpected token ";" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/maintenance/aircraft_management.php on line 258

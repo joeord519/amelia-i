@@ -1,0 +1,64 @@
+[12-Mar-2025 00:26:10 UTC] ✅ Debug - Received phone: (618) 920-6862, security word: Boner
+[12-Mar-2025 00:26:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 's.airport_code' in 'field list' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php:45
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php(45): mysqli->prepare('SELECT s.studen...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 45
+[12-Mar-2025 00:29:21 UTC] PHP Deprecated:  preg_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 18
+[12-Mar-2025 00:30:13 UTC] ✅ Debug - Received phone: (555) 555-5555, security word: testword
+[12-Mar-2025 00:30:13 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 's.airport_code' in 'field list' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php:45
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php(45): mysqli->prepare('SELECT s.studen...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 45
+[12-Mar-2025 00:34:28 UTC] PHP Warning:  Undefined variable $pdo in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 22
+[12-Mar-2025 00:34:28 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 22
+[12-Mar-2025 00:40:32 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/../../db_connect.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 6
+[12-Mar-2025 00:40:32 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/../../db_connect.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 6
+[12-Mar-2025 00:42:48 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/../../db_connect.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 6
+[12-Mar-2025 00:42:48 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/../../db_connect.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 6
+[12-Mar-2025 00:46:56 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'student_name' in 'field list' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php:28
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php(28): mysqli_query(Object(mysqli), 'SELECT student_...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 28
+[12-Mar-2025 05:32:12 UTC] PHP Notice:  ob_clean(): Failed to delete buffer. No buffer to delete in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 44
+[12-Mar-2025 05:35:24 UTC] PHP Notice:  ob_clean(): Failed to delete buffer. No buffer to delete in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 50
+[12-Mar-2025 05:37:24 UTC] PHP Notice:  ob_clean(): Failed to delete buffer. No buffer to delete in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 5
+[12-Mar-2025 05:38:17 UTC] PHP Notice:  ob_clean(): Failed to delete buffer. No buffer to delete in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 5
+[12-Mar-2025 05:39:42 UTC] PHP Notice:  ob_clean(): Failed to delete buffer. No buffer to delete in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 5
+[12-Mar-2025 05:48:25 UTC] PHP Notice:  ob_clean(): Failed to delete buffer. No buffer to delete in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/verify_student.php on line 46
+[12-Mar-2025 06:40:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'home_location' in 'where clause' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php:23
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php(23): mysqli_query(Object(mysqli), 'SELECT tail_num...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php on line 23
+[12-Mar-2025 06:42:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'home_location' in 'where clause' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php:25
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php(25): mysqli_query(Object(mysqli), 'SELECT tail_num...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php on line 25
+[12-Mar-2025 06:44:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'home_location' in 'where clause' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php:27
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php(27): mysqli_query(Object(mysqli), 'SELECT tail_num...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php on line 27
+[12-Mar-2025 06:50:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'airport_code' in 'where clause' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php:30
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php(30): mysqli_query(Object(mysqli), 'SELECT tail_num...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php on line 30
+[12-Mar-2025 06:53:45 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'airport_code' in 'where clause' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php:30
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php(30): mysqli_query(Object(mysqli), 'SELECT tail_num...')
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/flight-booking-v6/assets/fetch/fetch_aircraft.php on line 30

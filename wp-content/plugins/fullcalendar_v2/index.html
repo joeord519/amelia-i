@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Schedule Calendar</title>
+
+    <!-- ✅ Load FullCalendar, Bootstrap & SweetAlert2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="dist/index.global.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        #calendar-container {
+            display: flex;
+            max-width: 2000px;
+            margin: 50px auto;
+        }
+
+        #calendar {
+            flex: 1;
+            height: 90vh;
+        }
+
+        /* ✅ Style the small remove button */
+        .remove-btn {
+            margin-left: 8px;
+            font-size: 9px;
+            color: black;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 14px;
+            height: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 8px;
+            float: right;
+        }
+
+        /* ✅ Remove button hover effect */
+        .remove-btn:hover {
+            background: rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ✅ Calendar Container -->
+    <div id="calendar-container">
+        <div id="calendar"></div>
+    </div>
+
+    <!-- ✅ Fixed "Add Removed Planes/CFIs" Menu -->
+    <div class="dropdown" style="position: absolute; bottom: 20px; left: 20px; z-index: 1000;">
+        <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="resourceMenu" data-bs-toggle="dropdown" aria-expanded="false">
+            Add Removed Planes/CFIs
+        </button>
+        <ul class="dropdown-menu" id="resource-dropdown"></ul>
+    </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var removedResources = [];
+
+    // ✅ Function to Assign Colors Based on Flight Type
+    function getEventColor(flightType) {
+        const colors = {
+            "dual_training": "#007bff",
+            "solo_training": "#28a745",
+            "dual_cross_country": "#ffa500",
+            "solo_cross_country": "#ff9800",
+            "checkride": "#6a0dad"
+        };
+        return colors[flightType] || "#17a2b8"; 
+    }
+
+    fetch('get-resources.php')
+        .then(response => response.json())
+        .then(resources => {
+            console.log("✅ Loaded Resources:", resources);
+
+            if (!resources || resources.length === 0) {
+                console.error("❌ No resources loaded! FullCalendar cannot initialize.");
+                return;
+            }
+
+            let calendar = new FullCalendar.Calendar(calendarEl, {
+                schedulerLicenseKey: '0645855535-fcs-1739777982',
+                initialView: 'resourceTimelineDay',
+                resourceAreaHeaderContent: 'Aircraft & CFIs',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'resourceTimelineDay,resourceTimelineWeek,dayGridMonth,listMonth'
+                },
+                resources: resources,
+                resourceOrder: 'title',
+                events: function(fetchInfo, successCallback, failureCallback) {
+                    console.log("🔄 Fetching events from:", fetchInfo.startStr, "to", fetchInfo.endStr);
+                    fetch(`get-events.php?start=${fetchInfo.startStr}&end=${fetchInfo.endStr}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log("✅ Events Loaded into FullCalendar:", data);
+
+                            // ✅ Ensure `flight_type` exists before assigning colors
+                            data.forEach(event => {
+                                if (!event.extendedProps || !event.extendedProps.flight_type) {
+                                    event.backgroundColor = "#17a2b8"; 
+                                    event.borderColor = "#17a2b8";
+                                } else {
+                                    event.backgroundColor = getEventColor(event.extendedProps.flight_type);
+                                    event.borderColor = event.backgroundColor;
+                                }
+
+                                // ✅ Ensure multiple resources are assigned (Aircraft & CFI)
+                                if (event.resourceIds && event.resourceIds.length > 1) {
+                                    console.log(`🔍 Event Assigned to Multiple Resources: ${event.resourceIds}`);
+                                } else {
+                                    console.warn(`⚠️ Event Missing CFI Assignment: ${event.title}`, event);
+                                }
+                            });
+
+                            successCallback(data);
+                        })
+                        .catch(error => {
+                            console.error("❌ Error loading events:", error);
+                            failureCallback(error);
+                        });
+                },
+                eventClick: function(info) {
+                    let eventData = info.event.extendedProps;
+
+                    // ✅ Display SweetAlert2 popup with event details
+                    Swal.fire({
+                        title: `<strong>${info.event.title}</strong>`,
+                        html: `
+                            <strong>Aircraft:</strong> ${eventData.aircraft || "Unknown"} <br>
+                            <strong>CFI:</strong> ${eventData.cfi || "Unknown"} <br>
+                            <strong>Student:</strong> ${eventData.student || "N/A"} <br>
+                            <strong>Type:</strong> ${eventData.flight_type || "N/A"} <br>
+                            <strong>Start:</strong> ${info.event.start.toLocaleString()} <br>
+                            <strong>End:</strong> ${info.event.end ? info.event.end.toLocaleString() : "N/A"}
+                        `,
+                        icon: "info",
+                        confirmButtonText: "Close"
+                    });
+                }
+            });
+
+            // 🚀 Render Calendar
+            calendar.render();
+
+            // ✅ Capture Resource Removal and Add to Dropdown
+            function addRemoveButtons() {
+                document.querySelectorAll('.fc-datagrid-cell-main').forEach(resourceEl => {
+                    let resourceId = resourceEl.closest('[data-resource-id]')?.getAttribute('data-resource-id');
+                    if (!resourceId || resourceId.startsWith("group_") || resourceEl.querySelector(".remove-btn")) return;
+
+                    let removeBtn = document.createElement("button");
+                    removeBtn.innerHTML = "✖";
+                    removeBtn.classList.add("remove-btn");
+
+                    removeBtn.addEventListener("click", function() {
+                        let resource = calendar.getResourceById(resourceId);
+                        if (resource) {
+                            removedResources.push({ id: resource.id, title: resource.title });
+                            console.log("❌ Removing Resource:", resource.id);
+                            resource.remove();
+                            updateResourceDropdown();
+                        }
+                    });
+
+                    resourceEl.appendChild(removeBtn);
+                });
+            }
+
+            setTimeout(addRemoveButtons, 1000);
+
+            // ✅ Update Dropdown When Resources Are Removed
+            function updateResourceDropdown() {
+                let dropdownContainer = document.getElementById('resource-dropdown');
+                dropdownContainer.innerHTML = ""; 
+
+                removedResources.forEach(resource => {
+                    let button = document.createElement('button');
+                    button.innerText = resource.title;
+                    button.classList.add('dropdown-item');
+                    button.addEventListener('click', function() {
+                        if (!calendar.getResourceById(resource.id)) {
+                            console.log("📌 Re-Adding Resource:", resource.id);
+                            calendar.addResource(resource);
+                            removedResources = removedResources.filter(res => res.id !== resource.id);
+                            updateResourceDropdown();
+                            setTimeout(addRemoveButtons, 1000); 
+                        }
+                    });
+
+                    dropdownContainer.appendChild(button);
+                });
+            }
+        })
+        .catch(error => {
+            console.error("❌ Error loading resources:", error);
+        });
+});
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<title>FullCalendar Test</title>
+
+<!-- ✅ Load FullCalendar -->
+<script src="dist/index.global.min.js"></script>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  #calendar-container {
+    display: flex;
+    max-width: 2000px;
+    margin: 50px auto;
+  }
+
+  #filters {
+    width: 250px;
+    padding: 10px;
+    background: #f4f4f4;
+    border-right: 1px solid #ddd;
+  }
+
+  #calendar {
+    flex: 1;
+    height: 90vh;
+  }
+
+  .doc-icon {
+    font-size: 28px !important;
+  }
+
+  .chat-icon {
+    font-size: 14px !important;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ✅ Sidebar for filtering aircraft & CFIs -->
+  <div id="calendar-container">
+    <div id="filters">
+      <h3>Filter Resources</h3>
+      <div id="resource-filters"></div>
+    </div>
+    <div id="calendar"></div>
+  </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+    var filtersEl = document.getElementById('resource-filters');
+    let loadedResources = new Set(); // ✅ Track added resources to prevent duplication
+
+    Promise.all([
+        fetch('https://amelia-i.com/wp-content/plugins/fullcalendar_test/get-resources.php').then(response => response.json()),
+        fetch('https://amelia-i.com/wp-content/plugins/fullcalendar_test/get-cfis.php').then(response => response.json()),
+        fetch('https://amelia-i.com/wp-content/plugins/fullcalendar_test/get-events.php').then(response => response.json())
+    ]).then(([aircraftResources, cfiResources, flightEvents]) => {
+        console.log("✅ Loaded Aircraft Resources:", aircraftResources);
+        console.log("✅ Loaded CFI Resources:", cfiResources);
+        console.log("✅ Loaded Events:", flightEvents);
+
+        let sortedResources = [];
+
+        // ✅ Ensure CFIs and aircraft are only added once
+        cfiResources.forEach(cfi => {
+            if (cfi.title && cfi.id && !loadedResources.has(cfi.title)) {
+                sortedResources.push({ id: cfi.title, title: cfi.title });
+                loadedResources.add(cfi.title);
+            }
+        });
+
+        aircraftResources.forEach(aircraft => {
+            if (aircraft.id && aircraft.title && !loadedResources.has(aircraft.id)) {
+                sortedResources.push({ id: aircraft.id, title: aircraft.title });
+                loadedResources.add(aircraft.id);
+            }
+        });
+
+        // ✅ Initialize FullCalendar
+        let calendar = new FullCalendar.Calendar(calendarEl, {
+            schedulerLicenseKey: '0645855535-fcs-1739777982',
+            initialDate: "2025-02-26",
+            editable: true,
+            selectable: true,
+            initialView: 'resourceTimelineDay',
+            resourceAreaHeaderContent: 'Aircraft & CFIs',
+            resources: sortedResources,
+            events: flightEvents.map(event => {
+                if (!event.start || !event.end || !event.resourceId) {
+                    console.warn("⚠️ Skipping event with missing fields:", event);
+                    return null;
+                }
+                return event;
+            }).flat()
+        });
+
+        calendar.render();
+
+        // ✅ Clear filter panel before adding new resources
+        filtersEl.innerHTML = '';
+
+        let groupedResources = {};
+
+        function groupByLocation(resources, locationField = "home_location") {
+            resources.forEach(resource => {
+                let location = resource[locationField] || "Other";
+                if (!groupedResources[location]) {
+                    groupedResources[location] = { id: location, title: location, children: [] };
+                }
+
+                // ✅ Ensure only valid resources are added
+                if (resource.home_location === location) {
+                    groupedResources[location].children.push(resource);
+                }
+            });
+        }
+
+        // ✅ Group aircraft & CFIs separately
+        groupByLocation(aircraftResources, "home_location");
+        groupByLocation(cfiResources, "home_location");
+
+        Object.keys(groupedResources).forEach(location => {
+            let locationHeader = document.createElement('h3');
+            locationHeader.innerText = location;
+            filtersEl.appendChild(locationHeader);
+
+            // ✅ Ensure only one "Select All" checkbox per location
+            if (!document.querySelector(`[data-location='${location}']`)) {
+                let selectAllContainer = document.createElement('div');
+                let selectAllBox = document.createElement('input');
+                selectAllBox.type = 'checkbox';
+                selectAllBox.checked = true;
+                selectAllBox.dataset.location = location;
+
+                selectAllBox.addEventListener('change', function() {
+                    console.log("🔄 Select All Changed:", location, selectAllBox.checked); 
+
+                    let checkboxes = document.querySelectorAll(`[data-location='${location}']`);
+                    checkboxes.forEach(cb => {
+                        if (cb.checked !== selectAllBox.checked) {
+                            cb.checked = selectAllBox.checked;
+                            cb.dispatchEvent(new Event('change'));
+                        }
+                    });
+                });
+
+                let selectAllLabel = document.createElement('label');
+                selectAllLabel.style.fontWeight = 'bold';
+                selectAllLabel.innerText = ' Select All';
+                selectAllLabel.insertBefore(selectAllBox, selectAllLabel.firstChild);
+                selectAllContainer.appendChild(selectAllLabel);
+                filtersEl.appendChild(selectAllContainer);
+            }
+
+            // ✅ Process resources only once
+            groupedResources[location].children.forEach(resource => {
+                let existingResource = calendar.getResourceById(resource.id);
+                if (!existingResource) {
+                  if (!loadedResources.has(resource.id)) {
+    console.log("📌 Adding Resource to Calendar:", resource.id, resource.title);
+    calendar.addResource({ id: resource.id, title: resource.title });
+    loadedResources.add(resource.id);
+}
+
+// ✅ If all aircraft are deselected, remove CFIs too
+let anyChecked = document.querySelectorAll(`input[data-resourceId]:checked`).length > 0;
+if (!anyChecked) {
+    console.log("🚨 All aircraft deselected—removing all CFIs!");
+    cfiResources.forEach(cfi => {
+        let cfiRes = calendar.getResourceById(cfi.title);
+        if (cfiRes) {
+            cfiRes.remove();
+        }
+    });
+}
+ else {
+    console.warn("⚠️ Skipping Duplicate Resource:", resource.id, resource.title);
+}
+
+    loadedResources.add(resource.id); // ✅ Track added resources
+} else {
+    console.warn("⚠️ Skipping Duplicate Resource:", resource.id, resource.title);
+}
+                let label = document.createElement('label');
+                let checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.checked = true;
+                checkbox.dataset.resourceId = resource.id;
+                checkbox.dataset.location = location;
+
+                checkbox.addEventListener('change', function() {
+    let res = calendar.getResourceById(resource.id);
+    if (this.checked) {
+        if (!res) {
+            console.log("📌 Adding Resource:", resource.id, resource.title);
+            calendar.addResource({ id: resource.id, title: resource.title });
+        } else {
+            console.warn("⚠️ Skipping Duplicate Resource:", resource.id, resource.title);
+        }
+    } else {
+        if (res) {
+            console.log("❌ Removing Resource:", resource.id);
+            res.remove();
+        }
+    }
+
+    // ✅ Prevent CFIs from being re-added multiple times when toggling "Select All"
+    if (resource.title.includes("(CFI)")) {
+        let cfiRes = calendar.getResourceById(resource.title);
+        if (cfiRes) {
+            console.warn("⚠️ Skipping Duplicate CFI:", resource.id, resource.title);
+        }
+    }
+});
+
+
+                label.appendChild(checkbox);
+                let titleContainer = document.createElement("span");
+                titleContainer.innerText = " " + resource.title;
+
+                label.appendChild(titleContainer);
+                filtersEl.appendChild(label);
+                filtersEl.appendChild(document.createElement('br'));
+            });
+        });
+
+    }).catch(error => {
+        console.error("❌ Error loading events:", error);
+    });
+
+});
+</script>
+
+</body>
+</html>

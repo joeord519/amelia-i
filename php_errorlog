@@ -1,0 +1,226 @@
+[28-Jan-2025 08:06:25 UTC] wp_auto_login: trying to login user_id==1 loginusername=joe@flypiston.com to admin_url=https://amelia-i.com/wp-admin/
+[10-Feb-2025 15:41:29 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[12-Feb-2025 09:28:36 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/gravityforms/form_display.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/gravityforms/gravityforms.php on line 874
+[12-Feb-2025 09:28:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/gravityforms/form_display.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/gravityforms/gravityforms.php:874
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-includes/class-wp-hook.php(324): GFForms::maybe_process_form(Object(WP))
+#1 /home/customer/www/amelia-i.com/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 /home/customer/www/amelia-i.com/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#3 /home/customer/www/amelia-i.com/public_html/wp-includes/class-wp.php(830): do_action_ref_array('wp', Array)
+#4 /home/customer/www/amelia-i.com/public_html/wp-includes/functions.php(1336): WP->main('')
+#5 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(16): wp()
+#6 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#7 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/gravityforms/gravityforms.php on line 874
+[18-Feb-2025 07:04:54 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[22-Feb-2025 01:51:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 01:52:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:11:47 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:15:26 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:15:27 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:15:28 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:17:41 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:17:41 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:19:24 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:19:25 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:22:32 UTC] 🟡 DEBUG: php-test.php executed successfully at 2025-02-22 02:22:32
+[22-Feb-2025 02:24:17 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:26:21 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:27:40 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:27:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:27:42 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 02:49:51 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:10:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:10:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:10:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:10:37 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:10:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:10:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:10:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:10:46 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:15:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:15:39 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[22-Feb-2025 03:20:15 UTC] PHP Fatal error:  Uncaught Error: Undefined constant "WP_CONTENT_DIR" in /home/customer/www/amelia-i.com/public_html/wp-config.php:96
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-load.php(50): require_once()
+#1 /home/customer/www/amelia-i.com/public_html/wp-blog-header.php(13): require_once('/home/customer/...')
+#2 /home/customer/www/amelia-i.com/public_html/index.php(17): require('/home/customer/...')
+#3 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-config.php on line 96
+[11-Apr-2025 05:15:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'solo_status' in 'field list' in /home/customer/www/amelia-i.com/public_html/import_students.php:58
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/import_students.php(58): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/import_students.php on line 58
+[11-Apr-2025 05:15:16 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'solo_status' in 'field list' in /home/customer/www/amelia-i.com/public_html/import_students.php:58
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/import_students.php(58): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/import_students.php on line 58
+[11-Apr-2025 05:15:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'solo_status' in 'field list' in /home/customer/www/amelia-i.com/public_html/import_students.php:58
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/import_students.php(58): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/import_students.php on line 58
+[11-Apr-2025 05:17:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'solo_status' in 'field list' in /home/customer/www/amelia-i.com/public_html/import_students.php:58
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/import_students.php(58): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/import_students.php on line 58
+[06-Jul-2025 01:53:44 UTC] PHP Warning:  preg_match(): Allocation of JIT memory failed, PCRE JIT will be disabled. This is likely caused by security restrictions. Either grant PHP permission to allocate executable memory, or set pcre.jit=0 in /home/customer/www/amelia-i.com/public_html/wp-includes/load.php on line 121

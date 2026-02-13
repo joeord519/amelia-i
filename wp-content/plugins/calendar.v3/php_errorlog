@@ -1,0 +1,166 @@
+[22-May-2025 04:53:25 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/get-events.php on line 91
+[22-May-2025 06:35:40 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:37:05 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:38:30 UTC] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:38:35 UTC] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:38:38 UTC] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:39:02 UTC] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:39:09 UTC] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:39:10 UTC] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:39:11 UTC] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[22-May-2025 06:39:12 UTC] PHP Parse error:  syntax error, unexpected token "catch", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 103
+[24-May-2025 02:32:41 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/login.php on line 51
+[24-May-2025 02:34:15 UTC] PHP Parse error:  Unmatched '}' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/login.php on line 56
+[24-May-2025 04:17:57 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/send_email_notification.php on line 2
+[24-May-2025 04:21:33 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/send_email_notification.php on line 2
+[24-May-2025 07:13:10 UTC] ⚠️ SiteGround cache function not available.
+[24-May-2025 07:13:38 UTC] ⚠️ SiteGround cache function not available.
+[24-May-2025 07:14:50 UTC] ⚠️ SiteGround cache function not available.
+[24-May-2025 07:15:40 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 01:02:47 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 01:08:41 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 01:11:14 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 02:24:52 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 02:44:09 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 02:44:37 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 02:45:43 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 03:29:46 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 04:00:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sync_google_calendar() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php:62
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 62
+[25-May-2025 04:03:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sync_google_calendar() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php:66
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 66
+[25-May-2025 04:06:51 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 102
+[25-May-2025 04:09:15 UTC] PHP Fatal error:  Uncaught Error: createGoogleCalendarEvent(): Argument #1 ($flight) cannot be passed by reference in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php:73
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 73
+[25-May-2025 04:48:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function clear_cache() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php:95
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 95
+[25-May-2025 04:56:09 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 04:58:07 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 05:01:18 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 05:07:24 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 05:07:46 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 05:08:01 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 05:08:12 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 15:10:04 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 15:12:09 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 15:50:36 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 96
+[25-May-2025 15:51:49 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 96
+[25-May-2025 15:52:04 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 96
+[25-May-2025 15:54:12 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 96
+[25-May-2025 15:58:16 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 97
+[25-May-2025 15:59:23 UTC] PHP Parse error:  syntax error, unexpected token "catch" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 97
+[25-May-2025 16:16:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function clear_cache() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php:65
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 65
+[25-May-2025 16:17:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function clear_cache() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php:65
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_company_event.php on line 65
+[25-May-2025 16:34:35 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 16:36:25 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 16:36:55 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:17:54 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:18:02 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:18:10 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:18:16 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:18:44 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:18:50 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:18:55 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:19:32 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:19:51 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:20:13 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:20:20 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:20:29 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:22:07 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:24:08 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:24:34 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:11 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:19 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:24 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:29 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:35 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:40 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:46 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:51 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:25:59 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:26:05 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:26:13 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:26:21 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:26:58 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:27:06 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:27:12 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:27:17 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:27:22 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:27:28 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:27:34 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:27:49 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:28:00 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:28:17 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:28:35 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:29:04 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:41:39 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:41:46 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:41:52 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:47:39 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:49:57 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 18:59:01 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:00:02 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:00:53 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:01:09 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:03:49 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:05:24 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:07:02 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:16:38 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:25:45 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:40:16 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:46:49 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 19:59:21 UTC] ⚠️ SiteGround cache function not available.
+[25-May-2025 20:07:38 UTC] ⚠️ SiteGround cache function not available.
+[26-May-2025 00:01:24 UTC] ⚠️ SiteGround cache function not available.
+[26-May-2025 00:02:14 UTC] ⚠️ SiteGround cache function not available.
+[26-May-2025 00:31:25 UTC] ⚠️ SiteGround cache function not available.
+[26-May-2025 00:34:54 UTC] ⚠️ SiteGround cache function not available.
+[26-May-2025 01:52:26 UTC] ⚠️ SiteGround cache function not available.
+[26-May-2025 03:10:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'created_by' in 'field list' in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php:26
+Stack trace:
+#0 /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php on line 26
+[26-May-2025 03:19:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sendEmailNotification() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php:45
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php on line 45
+[26-May-2025 03:24:49 UTC] ⚠️ SiteGround cache function not available.
+[26-May-2025 03:41:16 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/google_calendar_push.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php on line 8
+[26-May-2025 03:41:16 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/google_calendar_push.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php on line 8
+[26-May-2025 03:44:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function pushSingleEventToGoogleCalendar() in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_ground_lesson.php on line 56
+[26-May-2025 03:47:46 UTC] PHP Warning:  Undefined array key "future_student_name" in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/sync_google_calendar.php on line 13
+[26-May-2025 03:56:01 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/google_calendar_push.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 6
+[26-May-2025 03:56:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/google_calendar_push.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 6
+[26-May-2025 04:06:59 UTC] PHP Warning:  require_once(/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/google_calendar_push.php): Failed to open stream: No such file or directory in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 6
+[26-May-2025 04:06:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/google_calendar_push.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/create_flight_admin.php on line 6
+[26-May-2025 04:09:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/google_calendar_remove.php' (include_path='.:/usr/local/php82/pear') in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/delete_flight.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/amelia-i.com/public_html/wp-content/plugins/calendar.v3/delete_flight.php on line 3

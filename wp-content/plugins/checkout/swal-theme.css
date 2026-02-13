@@ -1,0 +1,115 @@
+/* 🔥 PistonOps Comic SweetAlert Theme 🔥 */
+
+/* 🚀 ULTIMATE COMIC BOOK SweetAlert2 Box 🚀 */
+.swal2-popup {
+  border: 8px solid #6a5acd; /* Thick Piston Purple Frame */
+  border-radius: 25px; /* Soft comic corners */
+  background: linear-gradient(135deg, #fff8dc, #ffe5b4); /* Subtle cream to soft peach */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 40px 30px;
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.8),
+    0 0 25px rgba(106, 90, 205, 0.7);
+}
+
+/* Titles (Comic Font for h2 and h3) */
+.swal2-popup h2,
+.swal2-popup h3 {
+  font-family: 'Bangers', cursive;
+  font-size: 28px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* List Items (Tips) */
+.swal2-popup ul {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* Paragraphs (Small Notes) */
+.swal2-popup p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Input Fields */
+.swal2-input {
+  font-size: 18px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+/* Buttons General */
+.swal2-confirm,
+.swal2-cancel {
+  font-size: 16px !important;
+  padding: 12px 25px !important;
+  border-radius: 25px !important; /* Pill style button */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Confirm Button */
+.swal2-confirm {
+  background-color: #6a5acd !important; /* Piston Purple */
+  color: white !important;
+}
+
+.swal2-confirm:hover {
+  background-color: #00cfff !important; /* Hover Aqua Blue */
+  transform: translateY(-2px);
+}
+
+/* Cancel Button */
+.swal2-cancel {
+  background-color: #444 !important;
+  color: white !important;
+}
+
+.swal2-cancel:hover {
+  background-color: #666 !important;
+  transform: translateY(-2px);
+}
+
+/* Background Fade-In Effect */
+.swal2-container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.swal2-container.show-background::before {
+  opacity: 1;
+}
+
+/* Comic Pulse Animation */
+@keyframes comicPulse {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+.swal2-container {
+  animation: comicPulse 8s ease-in-out infinite;
+}

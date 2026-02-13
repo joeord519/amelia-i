@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Calendar - Piston Aviation</title>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar-scheduler@6.1.8/index.global.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      background: #fafaff;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      padding: 14px;
+      background: #222;
+      color: #f8d210;
+      text-shadow: 2px 2px #000;
+    }
+    #calendar {
+      padding: 10px 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Admin Calendar - Piston Aviation</h1>
+  <div id="calendar"></div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const autoLogin = urlParams.get('autologin');
+
+    if (autoLogin === '1') {
+      fetch('../checkout/check-admin-session.php')
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            const script = document.createElement("script");
+            script.src = "./admin-calendar.js?v=" + Date.now();
+            script.onload = () => {
+              if (typeof loadAdminCalendar === 'function') {
+                loadAdminCalendar(data);
+              }
+            };
+            document.body.appendChild(script);
+          } else {
+            showLoginPrompt();
+          }
+        });
+    } else {
+      showLoginPrompt();
+    }
+
+    function showLoginPrompt() {
+      Swal.fire({
+        title: "Admin Login",
+        html: `
+          <input id="adminPhone" class="swal2-input" placeholder="(XXX) XXX-XXXX">
+          <input id="adminPass" type="password" class="swal2-input" placeholder="Password">
+        `,
+        confirmButtonText: "Login",
+        allowOutsideClick: false,
+        didOpen: () => {
+          const input = document.getElementById("adminPhone");
+          input.addEventListener("input", function () {
+            let x = this.value.replace(/\D/g, '');
+            this.value = x.length > 6
+              ? `(${x.slice(0,3)}) ${x.slice(3,6)}-${x.slice(6,10)}`
+              : x.length > 3
+              ? `(${x.slice(0,3)}) ${x.slice(3)}`
+              : x.length > 0
+              ? `(${x}`
+              : '';
+          });
+        },
+        preConfirm: () => {
+          const phone = document.getElementById('adminPhone').value.trim();
+          const pass = document.getElementById('adminPass').value;
+          if (!phone || !pass) {
+            Swal.showValidationMessage("Both fields are required.");
+            return false;
+          }
+          return { phone, pass };
+        }
+      }).then(result => {
+        if (result.isConfirmed) {
+          const { phone, pass } = result.value;
+          fetch("verify_admin.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ phone, pass })
+          })
+          .then(async res => {
+            const text = await res.text();
+            try {
+              const data = JSON.parse(text);
+              if (data.success) {
+                const script = document.createElement("script");
+                script.src = "./admin-calendar.js?v=" + Date.now();
+                script.onload = () => {
+                  if (typeof loadAdminCalendar === 'function') {
+                    loadAdminCalendar(data);
+                  }
+                };
+                document.body.appendChild(script);
+              } else {
+                Swal.fire("Access Denied", data.message || "Invalid credentials.", "error")
+                  .then(() => location.reload());
+              }
+            } catch (e) {
+              console.error("Invalid JSON response from verify_admin.php:", text);
+              Swal.fire("Login Error", "Server did not return valid JSON.", "error");
+            }
+          })
+          .catch(err => {
+            Swal.fire("Network Error", err.message, "error");
+          });
+        }
+      });
+    }
+  </script>
+
+<a href="../checkout/admin-panel.php" id="adminPanelBtn">🏠 Admin Panel</a>
+
+<style>
+  #adminPanelBtn {
+    position: fixed;
+    top: 35px;
+    left: 20px;
+    background: #555;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    text-decoration: none;
+    z-index: 9999;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  #adminPanelBtn:hover {
+    background: #444;
+    transform: scale(1.05);
+  }
+</style>
+
+
+</body>
+</html>
+

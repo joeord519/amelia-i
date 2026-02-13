@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Piston Spinner — Visual Wheel Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; padding:32px; line-height:1.4;}
+    .card{max-width:720px; margin:0 auto; border:1px solid #ddd; border-radius:14px; padding:24px; box-shadow:0 6px 16px rgba(0,0,0,.06)}
+    .row{display:flex; gap:12px; align-items:center; margin:12px 0}
+    label{min-width:140px; font-weight:600}
+    input,select,button{font-size:16px; padding:10px 12px; border-radius:10px; border:1px solid #ccc}
+    button{cursor:pointer; border:0; background:#111; color:#fff; font-weight:800}
+    button:hover{filter:brightness(1.1)}
+    .muted{color:#666; font-size:13px}
+    .hr{height:1px; background:#eee; margin:18px 0}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>🎡 Piston Spinner — Visual Wheel Test</h2>
+    <p class="muted">Enter a real <b>student_id</b> and click Spin.</p>
+
+    <div class="row">
+      <label for="sid">Student ID</label>
+      <input id="sid" type="number" value="123" min="1" />
+    </div>
+
+    <div class="row">
+      <label for="ctx">Context</label>
+      <select id="ctx">
+        <option value="checkout_success">checkout_success</option>
+        <option value="booking_success">booking_success</option>
+        <option value="milestone">milestone</option>
+        <option value="promo">promo</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <button id="spinBtn">Spin Test (Visual)</button>
+    </div>
+
+    <div class="hr"></div>
+    <div class="muted">
+      Uses:
+      <ul>
+        <li><code>/api/eligibility.php</code></li>
+        <li><code>/api/profile.php?profile_key=...</code></li>
+        <li><code>/api/create_reward.php</code> (then spins to that prize)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Visual spinner client -->
+  <script>
+    window.PistonSpinnerConfig = {
+      API: {
+        eligibility: "https://amelia-i.com/wp-content/plugins/spinner/api/eligibility.php",
+        profile:     "https://amelia-i.com/wp-content/plugins/spinner/api/profile.php",
+        create:      "https://amelia-i.com/wp-content/plugins/spinner/api/create_reward.php",
+        claim:       "https://amelia-i.com/wp-content/plugins/spinner/api/claim.php"
+      },
+      HOURS_URL: "https://skylistpro.com/need-more-hours/"
+    };
+  </script>
+  <script src="https://amelia-i.com/wp-content/plugins/spinner/js/spinner.js"></script>
+  <script>
+    document.getElementById('spinBtn').addEventListener('click', () => {
+      const sid = parseInt(document.getElementById('sid').value || '0', 10);
+      const ctx = document.getElementById('ctx').value;
+      if (!sid || sid < 1) { Swal.fire("Student ID required", "Enter a valid numeric student id.", "warning"); return; }
+      PistonSpinner.maybeSpin(sid, ctx);
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Piston Aviation Program Comparison</title>
+
+<style>
+/* ===================== ROOT VARIABLES ===================== */
+:root{
+  --bg:#f3f7fb;
+  --navy:#0a3d62;
+  --navy2:#145a86;
+  --card:#ffffff;
+  --feature:#eef4f8;
+  --line:#e6e6e6;
+  --shadow:0 6px 24px rgba(0,0,0,0.10);
+
+  --green:#27ae60;
+  --red:#c0392b;
+  --blue:#2980b9;
+  --orange:#e67e22;
+}
+
+/* ===================== BASE ===================== */
+body{
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  margin:0;
+  padding:20px;
+  color:#111;
+}
+
+.wrap{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+h1{
+  font-size:34px;
+  margin:0;
+  color:var(--navy);
+  font-weight:900;
+  letter-spacing:0.5px;
+}
+
+.subhead{
+  margin:6px 0 0;
+  color:#355a74;
+  font-size:14px;
+  text-align:center;
+}
+
+/* ===================== PAGE HERO ===================== */
+.page-hero{
+  text-align:center;
+  background:
+    radial-gradient(900px 260px at 50% 0%, rgba(10,61,98,0.14), rgba(10,61,98,0)),
+    linear-gradient(180deg, rgba(255,255,255,0.75), rgba(255,255,255,0.35));
+  border:1px solid rgba(10,61,98,0.14);
+  border-radius:18px;
+  padding:20px 18px 16px;
+  margin:0 0 18px;
+  box-shadow:0 14px 34px rgba(0,0,0,0.08);
+}
+
+.page-hero h1{
+  margin:0 0 10px;
+  line-height:1.08;
+}
+
+.hero-kicker{
+  margin:0 auto 10px;
+  font-weight:900;
+  color:#1d4f73;
+  font-size:15px;
+  letter-spacing:0.35px;
+  text-transform:uppercase;
+}
+
+.hero-divider{
+  width:min(520px,92%);
+  height:1px;
+  margin:10px auto 12px;
+  background:linear-gradient(
+    90deg,
+    rgba(10,61,98,0),
+    rgba(10,61,98,0.25),
+    rgba(10,61,98,0)
+  );
+  border-radius:999px;
+}
+
+.hero-note{
+  margin:0 auto 10px;
+  max-width:820px;
+  color:#173042;
+  font-weight:800;
+  line-height:1.35;
+  background:#ffffff;
+  border:1px solid rgba(0,0,0,0.08);
+  border-radius:14px;
+  padding:12px 14px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  box-shadow:0 10px 22px rgba(0,0,0,0.06);
+}
+
+.hero-chip{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(230,126,34,0.14);
+  border:1px solid rgba(230,126,34,0.35);
+  color:#7a3f12;
+  font-weight:900;
+  font-size:12px;
+  letter-spacing:0.6px;
+  text-transform:uppercase;
+  padding:7px 10px;
+  border-radius:999px;
+  white-space:nowrap;
+}
+
+/* ===================== TABLE CARD ===================== */
+.table-card{
+  background:var(--card);
+  border-radius:14px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  margin-bottom:18px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+thead th{
+  padding:18px 12px;
+  font-size:13px;
+  text-transform:uppercase;
+  letter-spacing:0.7px;
+  text-align:center;
+  background:var(--navy);
+  color:#fff;
+  position:relative;
+}
+
+thead th.feature{
+  text-align:left;
+  padding-left:14px;
+  width:220px;
+}
+
+thead th.flagship{
+  background:linear-gradient(135deg, var(--navy), var(--navy2));
+  font-weight:900;
+  padding-top:16px;
+  padding-bottom:14px;
+  box-shadow: inset 0 -4px 0 rgba(255,255,255,0.25);
+}
+
+thead th.flagship::after{
+  content:"";
+  display:block;
+  height:1px;
+  width:64%;
+  margin:10px auto 0;
+  background:rgba(255,255,255,0.18);
+  border-radius:999px;
+}
+
+/* Header pills */
+.banner{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin:8px auto 0;
+  padding:6px 10px;
+  border-radius:999px;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:0.6px;
+  text-transform:uppercase;
+  color:#fff;
+  box-shadow:0 6px 16px rgba(0,0,0,0.20);
+}
+
+.banner.fast{ background:var(--orange); }
+.banner.predict{ background:var(--green); }
+
+/* ===================== TABLE BODY ===================== */
+tbody td{
+  border-bottom:1px solid var(--line);
+  padding:14px 12px;
+  text-align:center;
+  font-size:14px;
+  vertical-align:middle;
+}
+
+tbody td.feature{
+  text-align:left;
+  background:var(--feature);
+  font-weight:900;
+  width:220px;
+  padding-left:14px;
+  font-size:15px;
+}
+
+@media (min-width:901px){
+  tbody td:nth-child(4){ background:#fdf5ec; }
+  tbody td:nth-child(5){ background:#eefbef; }
+}
+
+/* ===================== BADGES & LINKS ===================== */
+.badge{
+  padding:5px 10px;
+  border-radius:6px;
+  color:#fff;
+  font-size:12px;
+  font-weight:900;
+  display:inline-block;
+  line-height:1.2;
+}
+
+.green{ background:var(--green); }
+.red{ background:var(--red); }
+.blue{ background:var(--blue); }
+.orange{ background:var(--orange); }
+
+.mini-link{
+  display:inline-block;
+  margin-top:8px;
+  font-size:12px;
+  font-weight:900;
+  text-decoration:none;
+  color:#fff;
+  background:var(--blue);
+  padding:7px 10px;
+  border-radius:10px;
+}
+
+.mini-link:hover{ filter:brightness(0.95); }
+
+/* ===================== DIVIDERS & SECTIONS ===================== */
+.divider{
+  height:1px;
+  background:rgba(0,0,0,0.08);
+  margin:18px 0;
+  border-radius:999px;
+}
+
+.section-title{
+  margin:26px 0 10px;
+  font-size:20px;
+  color:var(--navy);
+  font-weight:900;
+  text-align:center;
+}
+
+.note{
+  text-align:center;
+  font-size:13px;
+  color:#355a74;
+  margin:0 0 14px;
+}
+
+.guarantee-card{
+  background:var(--card);
+  border-radius:14px;
+  box-shadow:var(--shadow);
+  overflow:hidden;
+}
+
+.foot{
+  font-size:12px;
+  color:#4f6b7d;
+  line-height:1.35;
+}
+
+/* ===================== MOBILE ===================== */
+.mobile-cards,
+.mobile-guarantee-cards{
+  display:none;
+}
+
+@media (max-width:900px){
+
+  body{
+    padding:12px;
+  }
+
+  /* ✅ CONSTRAIN MOBILE CONTENT WIDTH */
+  .wrap{
+    max-width:420px;
+    margin:0 auto;
+  }
+
+  h1{ font-size:26px; }
+
+  .page-hero{
+    padding:16px 14px 14px;
+    border-radius:16px;
+  }
+
+  .hero-note{
+    display:block;
+  }
+
+  .hero-chip{
+    margin:0 auto 8px;
+  }
+
+  .table-card,
+  .guarantee-card{
+    display:none;
+  }
+
+  .mobile-cards,
+  .mobile-guarantee-cards{
+    display:block;
+  }
+
+  .cards-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .program-card{
+    background:var(--card);
+    border-radius:18px;
+    box-shadow:var(--shadow);
+  }
+
+  .program-head{
+    background:var(--navy);
+    color:#fff;
+    padding:14px 14px 12px;
+    position:relative;
+    border-radius:16px 16px 0 0;
+  }
+
+  .program-head.flagship{
+    background:linear-gradient(135deg, var(--navy), var(--navy2));
+  }
+
+  .program-title{
+    margin:0;
+    font-size:15px;
+    font-weight:900;
+    line-height:1.2;
+    padding-right:130px;
+  }
+
+  .program-tag{
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:10px;
+    font-weight:900;
+    padding:6px 9px;
+    border-radius:999px;
+    background:rgba(255,255,255,0.18);
+    border:1px solid rgba(255,255,255,0.28);
+    backdrop-filter: blur(6px);
+    white-space:nowrap;
+    max-width:calc(100% - 28px);
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+
+  .program-tag.min-start{
+    background:rgba(230,126,34,0.22);
+    border-color:rgba(230,126,34,0.50);
+  }
+
+  .program-body{
+    padding:12px 14px 14px;
+  }
+
+  .item{
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .item:last-child{ border-bottom:0; }
+
+  .label{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0.5px;
+    color:#5a7386;
+    font-weight:900;
+    margin-bottom:6px;
+  }
+
+  .value{
+    font-size:14px;
+    line-height:1.35;
+    font-weight:700;
+  }
+
+  .tiny{
+    font-size:12px;
+    color:#355a74;
+    font-weight:700;
+  }
+}
+</style>
+</head>
+
+<body>
+  <div class="wrap">
+  <header class="page-hero">
+    <h1>Piston Aviation Program Comparison &amp; Pricing</h1>
+
+    <p class="hero-kicker">We believe in transparency.</p>
+
+    <p class="hero-note">
+      <span class="hero-chip">Minimum to start:</span>
+      Pay by the Hour <strong>Basic</strong> package
+    </p>
+
+    <p class="subhead">Pick your path. We’ll handle the details.</p>
+  </header>
+
+
+    <!-- ===================== DESKTOP/TABLET TABLE ===================== -->
+    <div class="table-card">
+      <table aria-label="Piston Aviation Program Comparison">
+        <thead>
+          <tr>
+            <th class="feature">Feature</th>
+            <th>Pay by the Hour<br>Basic</th>
+            <th>Pay by the Hour<br>50+50 Package</th>
+
+            <th class="flagship">
+              Accelerated PPL<br>30-Day
+              <div class="banner fast">FASTEST PATH</div>
+            </th>
+
+            <th class="flagship">
+              Full Program<br>Self-Paced
+              <div class="banner predict">MOST PREDICTABLE $$</div>
+            </th>
+
+            <th>Sport Pilot<br>Full Program</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="feature">Cost to Start</td>
+            <td>$1,470</td>
+            <td>$13,500</td>
+            <td>$26,000</td>
+            <td>$19,900</td>
+            <td>$16,950</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Savings</td>
+            <td>$0</td>
+            <td><strong>$1,300</strong></td>
+            <td>N/A</td>
+            <td><strong>$1,300</strong></td>
+            <td><strong>$1,300</strong></td>
+          </tr>
+
+          <tr>
+            <td class="feature">Deposit Required</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Deposit Amount</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>$5,000</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Payment Plan Eligible</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Balance Due spread over 10 months ahead of class</td>
+            <td>$5000 Down, 5 monthly payments of $2980</td>
+            <td>$5000 Down, 5 monthly payments of $2390</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Full Payment Due By</td>
+            <td>Prior to 1st Flight</td>
+            <td>Prior to 1st Flight</td>
+            <td>30 Days Before Start</td>
+            <td>$5000 Prior to 1st Flight</td>
+            <td>$5000 Prior to 1st Flight</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Starting Aircraft Hours</td>
+            <td>5</td>
+            <td>50</td>
+            <td>Up to 60</td>
+            <td>65</td>
+            <td>55</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Starting Instructor Hours</td>
+            <td>5</td>
+            <td>50</td>
+            <td>Up to 100</td>
+            <td>65</td>
+            <td>65</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Housing Available</td>
+            <td>No</td>
+            <td>No</td>
+            <td>$1500 Extra</td>
+            <td>No</td>
+            <td>No</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Accessories Included</td>
+            <td><span class="badge red">None</span></td>
+            <td><span class="badge green">Headset &amp; Logbook</span></td>
+            <td><span class="badge green">Headset, Ground School, Logbook</span></td>
+            <td><span class="badge green">Headset, Ground School, Logbook</span></td>
+            <td><span class="badge green">Headset, Ground School, Logbook</span></td>
+          </tr>
+
+          <tr>
+            <td class="feature">Written Test Fee</td>
+            <td><span class="badge red">No</span></td>
+            <td><span class="badge red">No</span></td>
+            <td><span class="badge green">Included</span></td>
+            <td><span class="badge green">Included</span></td>
+            <td><span class="badge green">Included</span></td>
+          </tr>
+
+          <tr>
+            <td class="feature">Checkride Fee</td>
+            <td><span class="badge red">No</span></td>
+            <td><span class="badge red">No</span></td>
+            <td><span class="badge green">Included</span></td>
+            <td><span class="badge green">Included up to $700</span></td>
+            <td><span class="badge green">Included up to $700</span></td>
+          </tr>
+
+          <tr>
+            <td class="feature">Refundable?</td>
+            <td><span class="badge red">No</span></td>
+            <td><span class="badge red">No</span></td>
+            <td>
+              <span class="badge red">Deposit Non-Refundable</span><br><br>
+              <span class="badge orange">All payments non-refundable 30 days prior to start date</span>
+            </td>
+            <td><span class="badge orange">Non-refundable 30 days after payment</span></td>
+            <td><span class="badge orange">Non-refundable 30 days after payment</span></td>
+          </tr>
+
+          <tr>
+            <td class="feature">Program Guarantee</td>
+            <td><span class="badge red">Not Available</span></td>
+            <td><span class="badge red">Not Available</span></td>
+            <td><span class="badge red">Not Available</span></td>
+            <td>
+              <span class="badge green">Eligible</span><br>
+              <a class="mini-link" href="#guarantee">View Guarantee Details</a>
+            </td>
+            <td>
+              <span class="badge green">Eligible</span><br>
+              <a class="mini-link" href="#guarantee">View Guarantee Details</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===================== MOBILE PROGRAM CARDS ===================== -->
+    <div class="mobile-cards">
+      <div class="cards-grid">
+
+        <!-- 1) Pay by the Hour - Basic -->
+        <div class="program-card">
+          <div class="program-head">
+            <span class="program-tag min-start">MINIMUM TO START</span>
+            <p class="program-title">Pay by the Hour<br>Basic</p>
+          </div>
+          <div class="program-body">
+            <div class="item"><div class="label">Cost to Start</div><div class="value">$1,470</div></div>
+            <div class="item"><div class="label">Savings</div><div class="value">$0</div></div>
+            <div class="item"><div class="label">Deposit Required</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Deposit Amount</div><div class="value">N/A</div></div>
+            <div class="item"><div class="label">Payment Plan Eligible</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Full Payment Due By</div><div class="value">Prior to 1st Flight</div></div>
+            <div class="item"><div class="label">Starting Aircraft Hours</div><div class="value">5</div></div>
+            <div class="item"><div class="label">Starting Instructor Hours</div><div class="value">5</div></div>
+            <div class="item"><div class="label">Housing Available</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Accessories Included</div><div class="value"><span class="badge red">None</span></div></div>
+            <div class="item"><div class="label">Written Test Fee</div><div class="value"><span class="badge red">No</span></div></div>
+            <div class="item"><div class="label">Checkride Fee</div><div class="value"><span class="badge red">No</span></div></div>
+            <div class="item"><div class="label">Refundable?</div><div class="value"><span class="badge red">No</span></div></div>
+            <div class="item"><div class="label">Program Guarantee</div><div class="value"><span class="badge red">Not Available</span></div></div>
+          </div>
+        </div>
+
+        <!-- 2) 50+50 Package -->
+        <div class="program-card">
+          <div class="program-head">
+            <p class="program-title">Pay by the Hour<br>50+50 Package</p>
+          </div>
+          <div class="program-body">
+            <div class="item"><div class="label">Cost to Start</div><div class="value">$13,500</div></div>
+            <div class="item"><div class="label">Savings</div><div class="value"><strong>$1,300</strong></div></div>
+            <div class="item"><div class="label">Deposit Required</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Deposit Amount</div><div class="value">N/A</div></div>
+            <div class="item"><div class="label">Payment Plan Eligible</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Full Payment Due By</div><div class="value">Prior to 1st Flight</div></div>
+            <div class="item"><div class="label">Starting Aircraft Hours</div><div class="value">50</div></div>
+            <div class="item"><div class="label">Starting Instructor Hours</div><div class="value">50</div></div>
+            <div class="item"><div class="label">Housing Available</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Accessories Included</div><div class="value"><span class="badge green">Headset &amp; Logbook</span></div></div>
+            <div class="item"><div class="label">Written Test Fee</div><div class="value"><span class="badge red">No</span></div></div>
+            <div class="item"><div class="label">Checkride Fee</div><div class="value"><span class="badge red">No</span></div></div>
+            <div class="item"><div class="label">Refundable?</div><div class="value"><span class="badge red">No</span></div></div>
+            <div class="item"><div class="label">Program Guarantee</div><div class="value"><span class="badge red">Not Available</span></div></div>
+          </div>
+        </div>
+
+        <!-- 3) Accelerated PPL 30-Day -->
+        <div class="program-card">
+          <div class="program-head flagship">
+            <span class="program-tag">FASTEST PATH</span>
+            <p class="program-title">Accelerated PPL<br>30-Day</p>
+          </div>
+          <div class="program-body">
+            <div class="item"><div class="label">Cost to Start</div><div class="value">$26,000</div></div>
+            <div class="item"><div class="label">Savings</div><div class="value">N/A</div></div>
+            <div class="item"><div class="label">Deposit Required</div><div class="value">Yes</div></div>
+            <div class="item"><div class="label">Deposit Amount</div><div class="value">$5,000</div></div>
+            <div class="item"><div class="label">Payment Plan Eligible</div><div class="value">Balance Due spread over 10 months ahead of class</div></div>
+            <div class="item"><div class="label">Full Payment Due By</div><div class="value">30 Days Before Start</div></div>
+            <div class="item"><div class="label">Starting Aircraft Hours</div><div class="value">Up to 60</div></div>
+            <div class="item"><div class="label">Starting Instructor Hours</div><div class="value">Up to 100</div></div>
+            <div class="item"><div class="label">Housing Available</div><div class="value">$1500 Extra</div></div>
+            <div class="item"><div class="label">Accessories Included</div><div class="value"><span class="badge green">Headset, Ground School, Logbook</span></div></div>
+            <div class="item"><div class="label">Written Test Fee</div><div class="value"><span class="badge green">Included</span></div></div>
+            <div class="item"><div class="label">Checkride Fee</div><div class="value"><span class="badge green">Included</span></div></div>
+            <div class="item">
+              <div class="label">Refundable?</div>
+              <div class="value">
+                <span class="badge red">Deposit Non-Refundable</span><br><br>
+                <span class="badge orange">All payments non-refundable 30 days prior to start date</span>
+              </div>
+            </div>
+            <div class="item"><div class="label">Program Guarantee</div><div class="value"><span class="badge red">Not Available</span></div></div>
+          </div>
+        </div>
+
+        <!-- 4) Full Program Self-Paced -->
+        <div class="program-card">
+          <div class="program-head flagship">
+            <span class="program-tag">MOST PREDICTABLE $$</span>
+            <p class="program-title">Full Program<br>Self-Paced</p>
+          </div>
+          <div class="program-body">
+            <div class="item"><div class="label">Cost to Start</div><div class="value">$19,900</div></div>
+            <div class="item"><div class="label">Savings</div><div class="value"><strong>$1,300</strong></div></div>
+            <div class="item"><div class="label">Deposit Required</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Deposit Amount</div><div class="value">N/A</div></div>
+            <div class="item"><div class="label">Payment Plan Eligible</div><div class="value">$5000 Down, 5 monthly payments of $2980</div></div>
+            <div class="item"><div class="label">Full Payment Due By</div><div class="value">$5000 Prior to 1st Flight</div></div>
+            <div class="item"><div class="label">Starting Aircraft Hours</div><div class="value">65</div></div>
+            <div class="item"><div class="label">Starting Instructor Hours</div><div class="value">65</div></div>
+            <div class="item"><div class="label">Housing Available</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Accessories Included</div><div class="value"><span class="badge green">Headset, Ground School, Logbook</span></div></div>
+            <div class="item"><div class="label">Written Test Fee</div><div class="value"><span class="badge green">Included</span></div></div>
+            <div class="item"><div class="label">Checkride Fee</div><div class="value"><span class="badge green">Included up to $700</span></div></div>
+            <div class="item"><div class="label">Refundable?</div><div class="value"><span class="badge orange">Non-refundable 30 days after payment</span></div></div>
+            <div class="item">
+              <div class="label">Program Guarantee</div>
+              <div class="value">
+                <span class="badge green">Eligible</span><br>
+                <a class="mini-link" href="#guarantee">View Guarantee Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5) Sport Pilot Full Program -->
+        <div class="program-card">
+          <div class="program-head">
+            <p class="program-title">Sport Pilot<br>Full Program</p>
+          </div>
+          <div class="program-body">
+            <div class="item"><div class="label">Cost to Start</div><div class="value">$16,950</div></div>
+            <div class="item"><div class="label">Savings</div><div class="value"><strong>$1,300</strong></div></div>
+            <div class="item"><div class="label">Deposit Required</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Deposit Amount</div><div class="value">N/A</div></div>
+            <div class="item"><div class="label">Payment Plan Eligible</div><div class="value">$5000 Down, 5 monthly payments of $2390</div></div>
+            <div class="item"><div class="label">Full Payment Due By</div><div class="value">$5000 Prior to 1st Flight</div></div>
+            <div class="item"><div class="label">Starting Aircraft Hours</div><div class="value">55</div></div>
+            <div class="item"><div class="label">Starting Instructor Hours</div><div class="value">65</div></div>
+            <div class="item"><div class="label">Housing Available</div><div class="value">No</div></div>
+            <div class="item"><div class="label">Accessories Included</div><div class="value"><span class="badge green">Headset, Ground School, Logbook</span></div></div>
+            <div class="item"><div class="label">Written Test Fee</div><div class="value"><span class="badge green">Included</span></div></div>
+            <div class="item"><div class="label">Checkride Fee</div><div class="value"><span class="badge green">Included up to $700</span></div></div>
+            <div class="item"><div class="label">Refundable?</div><div class="value"><span class="badge orange">Non-refundable 30 days after payment</span></div></div>
+            <div class="item">
+              <div class="label">Program Guarantee</div>
+              <div class="value">
+                <span class="badge green">Eligible</span><br>
+                <a class="mini-link" href="#guarantee">View Guarantee Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- ===================== GUARANTEE SECTION (DESKTOP TABLE) ===================== -->
+    <h2 id="guarantee" class="section-title">Program Guarantee Details</h2>
+    <p class="note">Applies to <strong>Full Program (Self-Paced)</strong> and <strong>Sport Pilot (Full Program)</strong>.</p>
+
+    <div class="guarantee-card">
+      <table aria-label="Program Guarantee Details">
+        <thead>
+          <tr>
+            <th class="feature">Guarantee Item</th>
+            <th>Full Program<br>Self-Paced</th>
+            <th>Sport Pilot<br>Full Program</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="feature">Eligible for Guarantee?</td>
+            <td><span class="badge green">Yes</span></td>
+            <td><span class="badge green">Yes</span></td>
+          </tr>
+
+          <tr>
+            <td class="feature">Guarantee Cost</td>
+            <td>$2500</td>
+            <td>$2500</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Guarantee Value</td>
+            <td>$5510</td>
+            <td>$5510</td>
+          </tr>
+
+          <tr>
+            <td class="feature">Includes</td>
+            <td>
+              10 Extra Aircraft Hours Prior to Checkride*<br>
+              10 Extra Instructor Hours Prior to Checkride*<br>
+              All additional instructor hours at 50% off prior to checkride*<br>
+              Guarantee hours can be used to travel to/from checkride*<br>
+              Checkride fee covered up to additional $500*<br>
+              Checkride fail: +5 aircraft hours no charge*<br>
+              Checkride fail: +5 instructor hours no charge*
+            </td>
+            <td>
+              10 Extra Aircraft Hours Prior to Checkride*<br>
+              10 Extra Instructor Hours Prior to Checkride*<br>
+              All additional instructor hours at 50% off prior to checkride*<br>
+              Guarantee hours can be used to travel to/from checkride*<br>
+              Checkride fee covered up to additional $500*<br>
+              Checkride fail: +5 aircraft hours no charge*<br>
+              Checkride fail: +5 instructor hours no charge*
+            </td>
+          </tr>
+
+          <tr>
+            <td class="feature">Fine Print</td>
+            <td class="foot">
+              *All Guarantee Benefits are subject to the Program Guarantee Contract and approval by Piston Management.
+            </td>
+            <td class="foot">
+              *All Guarantee Benefits are subject to the Program Guarantee Contract and approval by Piston Management.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ===================== GUARANTEE (MOBILE CARDS) ===================== -->
+    <div class="mobile-guarantee-cards">
+      <div class="cards-grid" style="margin-top:12px;">
+        <div class="program-card">
+          <div class="program-head flagship">
+            <p class="program-title">Guarantee — Full Program<br>Self-Paced</p>
+          </div>
+          <div class="program-body">
+            <div class="item"><div class="label">Eligible</div><div class="value"><span class="badge green">Yes</span></div></div>
+            <div class="item"><div class="label">Cost</div><div class="value">$2500</div></div>
+            <div class="item"><div class="label">Value</div><div class="value">$5510</div></div>
+            <div class="item">
+              <div class="label">Includes</div>
+              <div class="value tiny">
+                10 Extra Aircraft Hours Prior to Checkride*<br>
+                10 Extra Instructor Hours Prior to Checkride*<br>
+                All additional instructor hours at 50% off prior to checkride*<br>
+                Guarantee hours can be used to travel to/from checkride*<br>
+                Checkride fee covered up to additional $500*<br>
+                Checkride fail: +5 aircraft hours no charge*<br>
+                Checkride fail: +5 instructor hours no charge*
+              </div>
+            </div>
+            <div class="item"><div class="label">Fine Print</div><div class="value tiny">*Subject to contract and approval by Piston Management.</div></div>
+          </div>
+        </div>
+
+        <div class="program-card">
+          <div class="program-head">
+            <p class="program-title">Guarantee — Sport Pilot<br>Full Program</p>
+          </div>
+          <div class="program-body">
+            <div class="item"><div class="label">Eligible</div><div class="value"><span class="badge green">Yes</span></div></div>
+            <div class="item"><div class="label">Cost</div><div class="value">$2500</div></div>
+            <div class="item"><div class="label">Value</div><div class="value">$5510</div></div>
+            <div class="item">
+              <div class="label">Includes</div>
+              <div class="value tiny">
+                10 Extra Aircraft Hours Prior to Checkride*<br>
+                10 Extra Instructor Hours Prior to Checkride*<br>
+                All additional instructor hours at 50% off prior to checkride*<br>
+                Guarantee hours can be used to travel to/from checkride*<br>
+                Checkride fee covered up to additional $500*<br>
+                Checkride fail: +5 aircraft hours no charge*<br>
+                Checkride fail: +5 instructor hours no charge*
+              </div>
+            </div>
+            <div class="item"><div class="label">Fine Print</div><div class="value tiny">*Subject to contract and approval by Piston Management.</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

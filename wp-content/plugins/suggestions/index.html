@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Suggestion Box</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<button onclick="launchSuggestionBox()">💬 Got a Suggestion?</button>
+
+<script>
+function launchSuggestionBox() {
+  Swal.fire({
+    title: '🗳️ Suggest Something!',
+    html: `
+      <select id="category" class="swal2-input">
+        <option value="Calendar">Calendar</option>
+        <option value="Scheduler">Scheduler</option>
+      </select>
+      <textarea id="suggestion" class="swal2-textarea" placeholder="Your Suggestion"></textarea>
+      <input id="name" class="swal2-input" placeholder="Your Name (optional)">
+      <input id="email" class="swal2-input" placeholder="Your Email (optional)">
+      <input id="phone" class="swal2-input" placeholder="Your Phone (optional)">
+    `,
+    confirmButtonText: 'Submit',
+    showCancelButton: true,
+    preConfirm: () => {
+      const category = document.getElementById('category').value;
+      const suggestion = document.getElementById('suggestion').value;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+
+      if (!suggestion.trim()) {
+        Swal.showValidationMessage('Suggestion is required!');
+        return false;
+      }
+
+      return fetch('submit_suggestion.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ category, suggestion, name, email, phone })
+      })
+      .then(res => res.json())
+      .catch(() => Swal.showValidationMessage('Request failed. Try again.'));
+    }
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire('✅ Thank you!', 'We love great ideas (and tolerate the bad ones).', 'success');
+    }
+  });
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<Files "inbound-email.php">
+  Order Deny,Allow
+  Deny from all
+
+  # Allow Mailgun IPs
+  Allow from 50.31.156.6
+  Allow from 50.31.156.7
+  Allow from 50.31.156.8
+  Allow from 159.135.225.83
+  Allow from 159.135.225.84
+  Allow from 159.135.225.85
+  Allow from 69.72.32.0/23
+  Allow from 69.72.34.0/24
+
+  Satisfy Any
+</Files>
