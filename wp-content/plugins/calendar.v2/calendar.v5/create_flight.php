@@ -2,6 +2,7 @@
 require_once(__DIR__ . '/db_connect.php');
 require_once(__DIR__ . '/send_email_notification.php');
 require_once(__DIR__ . '/sync_google_calendar.php');
+require_once(__DIR__ . '/includes/aircraft_availability.php');
 
 header('Content-Type: application/json');
 
@@ -26,6 +27,12 @@ file_put_contents(__DIR__ . '/debug_create_flight.log', print_r($input, true), F
   $flightType = $flightTypeData['name'] ?? 'Flight';
   $end = date("Y-m-d H:i:s", strtotime("+$duration minutes", strtotime($start)));
   $isSolo = str_contains(strtolower($flightType), 'solo');
+
+
+  $availabilityReason = '';
+  if (!check_aircraft_available($db, $input['tailNumber'], $start, $end, $availabilityReason)) {
+    throw new Exception($availabilityReason);
+  }
 $studentId = $input['studentId'] ?? null;
 file_put_contents(__DIR__ . '/debug_create_flight.log', print_r($input, true), FILE_APPEND);
 if (!$studentId) {

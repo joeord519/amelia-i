@@ -1,0 +1,82 @@
+.amelia-hub {
+  border: 1px solid #d9e0ea;
+  border-radius: 10px;
+  padding: 20px;
+  background: #f8fbff;
+}
+
+.amelia-hub-intro {
+  margin-top: -4px;
+  color: #344054;
+}
+
+.amelia-role-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+
+.amelia-role-card {
+  border: 1px solid #c8d4e3;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.amelia-role-card.is-active {
+  border-color: #0b66d0;
+  color: #0b66d0;
+}
+
+.amelia-panel {
+  display: none;
+  margin-top: 10px;
+}
+
+.amelia-panel.is-active {
+  display: block;
+}
+
+.amelia-hub form {
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.amelia-hub input {
+  min-width: 250px;
+  border: 1px solid #b9c7d7;
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.amelia-hub button[type="submit"] {
+  background: #0b66d0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+}
+
+.amelia-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.amelia-table th,
+.amelia-table td {
+  border-bottom: 1px solid #dbe4ef;
+  padding: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.amelia-error {
+  color: #b42318;
+  font-weight: 600;
+}

@@ -8,6 +8,7 @@ error_reporting(E_ALL);
 require_once(__DIR__ . '/db_connect.php');
 require_once(__DIR__ . '/sync_google_calendar.php');
 require_once(__DIR__ . '/send_email_notification.php');
+require_once(__DIR__ . '/includes/aircraft_availability.php');
 
 header('Content-Type: application/json');
 
@@ -51,6 +52,11 @@ $db->exec("SET time_zone = 'America/Chicago'"); // ✅ MySQL now saves and inter
   $stmt->execute([$flightId]);
   $flight = $stmt->fetch(PDO::FETCH_ASSOC);
   if (!$flight) throw new Exception("Flight not found.");
+
+  $availabilityReason = '';
+  if (!check_aircraft_available($db, $flight['tail_number'], $startUTC, $endUTC, $availabilityReason)) {
+    throw new Exception($availabilityReason);
+  }
 
   // Update DB
   $stmt = $db->prepare("UPDATE wp_flight_schedule SET start_time = ?, end_time = ?, updated_at = NOW() WHERE id = ?");

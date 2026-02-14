@@ -86,6 +86,11 @@
 
   <div id="calendar-controls">
     <button id="companyEventBtn">📅 Create Company Event</button>
+    <button id="markDownBtn">🛠️ Mark Aircraft Down</button>
+    <button id="markUpBtn">✅ Mark Aircraft Up</button>
+    <label style="margin-left:12px; font-weight:600;">
+      <input type="checkbox" id="availableOnlyToggle" /> Available only
+    </label>
   </div>
 
   <div id="calendarContainer">
