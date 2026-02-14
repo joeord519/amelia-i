@@ -1,5 +1,6 @@
 <?php
 require_once(__DIR__ . '/db_connect.php');
+require_once(__DIR__ . '/../calendar.v2/calendar.v5/includes/aircraft_availability.php');
 header('Content-Type: application/json');
 
 try {
@@ -20,6 +21,14 @@ try {
   }
 
   $db = getDB();
+
+  $availabilityReason = '';
+  $checkoutStart = date('Y-m-d H:i:s');
+  $checkoutEnd = date('Y-m-d H:i:s', strtotime('+1 minute'));
+  if (!check_aircraft_available($db, $tail_number, $checkoutStart, $checkoutEnd, $availabilityReason)) {
+    echo json_encode(['status' => 'error', 'message' => $availabilityReason]);
+    exit;
+  }
 
   // ✅ Fetch student
   if ($student_id > 0) {

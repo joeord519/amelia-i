@@ -2,6 +2,7 @@
 require_once(__DIR__ . '/db_connect.php');
 require_once(__DIR__ . '/../calendar.v2/appointment-booking/send_email_notification.php');
 require_once(__DIR__ . '/../calendar.v2/appointment-booking/google_calendar_push.php');
+require_once(__DIR__ . '/../calendar.v2/calendar.v5/includes/aircraft_availability.php');
 
 header('Content-Type: application/json');
 
@@ -17,6 +18,11 @@ try {
   }
 
   $db = getDB();
+
+  $availabilityReason = '';
+  if (!check_aircraft_available($db, $tailNumber, $startTime, $endTime, $availabilityReason)) {
+    throw new Exception($availabilityReason);
+  }
   $stmt = $db->prepare("INSERT INTO wp_flight_schedule (student_id, cfi_id, tail_number, start_time, end_time, status) VALUES (:sid, :cfi, :tail, :start, :end, 'Scheduled')");
   $stmt->execute([
     ':sid' => $studentId,

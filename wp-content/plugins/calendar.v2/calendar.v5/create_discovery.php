@@ -1,6 +1,7 @@
 <?php
 require_once(__DIR__ . '/db_connect.php');
 require_once(__DIR__ . '/send_discovery_email.php');
+require_once(__DIR__ . '/includes/aircraft_availability.php');
 header('Content-Type: application/json');
 
 try {
@@ -30,6 +31,11 @@ try {
   $end = date("Y-m-d H:i:s", $endTimestamp);
 
   $db = getDB();
+
+  $availabilityReason = '';
+  if (!check_aircraft_available($db, $tail, $start, $end, $availabilityReason)) {
+    throw new Exception($availabilityReason);
+  }
 
   // 1️⃣ Insert into wp_leads
   $stmt = $db->prepare("
